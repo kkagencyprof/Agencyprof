@@ -1,0 +1,11 @@
+- Now move all ocx files from c:\agencyprof to c:\windows\syswow64\.
+  (
+    These files are to be moved: 
+    COMDLG32.OCX, MSComCtl.ocx, Resizer.ocx and cswsk32.ocx
+  )
+
+- Then run c:\agencyprof\postinst.bat as administrator
+
+- Install MyODBC if not done yet.
+
+Have fun
