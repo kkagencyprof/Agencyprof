@@ -1,0 +1,11 @@
+Form1 = 195, 36, 1067, 637, , 11, 35, 770, 514, C
+popmain = 15, 3, 899, 493, C, 22, 29, 821, 477, C
+popglob = 179, 13, 966, 467, C
+basBlfArrays = 88, 88, 830, 498, C
+basBlowfish = 104, 104, 843, 647, C
+basBlowfishFns = 130, 130, 869, 673, C
+basConvert = 0, 0, 0, 0, C
+basRadix64 = 0, 0, 0, 0, C
+basUnsignedWord = 0, 0, 0, 0, C
+Constants4pop = 215, 57, 1078, 610, C
+closing = 110, 145, 850, 524, C, 88, 116, 848, 611, C

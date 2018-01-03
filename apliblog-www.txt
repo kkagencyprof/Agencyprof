@@ -1,0 +1,3 @@
+171221 95622: dll0.c (46): Version requested
+171221 95622: dll0.c (46): Version requested
+171221 95626: dll0.c (56): APLibWriteLog set mode 0

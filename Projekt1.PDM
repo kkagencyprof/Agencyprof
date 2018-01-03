@@ -1,0 +1,310 @@
+[Root]
+Most Recent Package=Standardm‰ﬂiges Setup-Paket 1
+
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=c:\Agencyprof\redist
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Files Found]
+Tutorial.com.zip=L:\AgencyProf\medien.kk\AgencyProf\Tutorial.com.zip
+Tutorial.zip=L:\AgencyProf\medien.kk\AgencyProf\Tutorial.zip
+rtfs.ini=L:\AgencyProf\rtfs.ini
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Files Released]
+rtfs.ini=
+tutorial.com.zip=
+tutorial.zip=
+aploader.exe=
+transtab-de.txt=
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Missing Dependency Information]
+C:\WINNT\system32\Resizer.ocx=
+C:\Programme\Gemeinsame Dateien\System\ado\msado25.tlb=
+C:\WINNT\system32\WININET.DLL=
+C:\WINNT\system32\uucode32.dll=
+L:\AgencyProf\aploader.exe=
+L:\AgencyProf\zlauncher1.exe=
+C:\WINDOWS\system32\csfed32.ocx=
+C:\WINDOWS\system32\Resizer.ocx=
+C:\WINDOWS\system32\cswsk32.ocx=
+L:\AgencyProf\srcado\SHELLLNK.TLB=
+C:\WINDOWS\system32\wininet.dll=
+C:\WINDOWS\system32\uucode32.dll=
+L:\AgencyProf\AgencyprofPOPClient.exe=
+C:\Programme\BasicAware\EVEWalletAware\MSComCtl.ocx=
+C:\WINDOWS\system32\SHELLLNK.TLB=
+C:\Programme\Microsoft Office\Office\MSOUTL9.OLB=
+C:\WINDOWS\system32\ieframe.dll=
+C:\WINDOWS\system32\pdh.dll=
+C:\Windows\SysWOW64\Resizer.ocx=
+C:\Program Files (x86)\BasicAware\EVEWalletAware\MSComCtl.ocx=
+C:\Program Files\Microsoft Office\Office\MSOUTL9.OLB=
+C:\Agencyprof\srcado\SHELLLNK.TLB=
+C:\Windows\SysWOW64\ieframe.dll=
+C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.9600.17810_none_7c5b6194aa0716f1\comctl32.dll=
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Out-of-Date Dependency Information]
+C:\WINNT\system32\richtx32.ocx=
+C:\WINNT\system32\MsFlxGrd.ocx=
+C:\WINNT\system32\MSCOMCTL.OCX=
+C:\WINNT\system32\COMDLG32.OCX=
+C:\WINDOWS\system32\MSComCtl.ocx=
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Files Added]
+l:\agencyprof\srcado\wav.zip=
+l:\agencyprof\apdemo.mdb=
+l:\agencyprof\mime.typ=
+l:\agencyprof\srcado\transtab-en.txt=
+l:\agencyprof\zlauncher1.exe=
+l:\agencyprof\agencyprofpopclient.exe=
+l:\agencyprof\rtfs.ini=
+l:\agencyprof\tutorial.com.zip=
+l:\agencyprof\tutorial.zip=
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Files Removed]
+l:\agencyprof\aploader.exe=
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Files In Project]
+L:\AgencyProf\srcado\wav.zip=Yes
+L:\AgencyProf\apdemo.mdb=Yes
+L:\AgencyProf\mime.typ=Yes
+L:\AgencyProf\srcado\transtab-en.txt=Yes
+L:\AgencyProf\zlauncher1.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\VB6DE.DLL=Yes
+C:\WINDOWS\system32\uucode32.dll=Yes
+C:\WINDOWS\system32\wininet.dll=Yes
+C:\WINDOWS\system32\msjet40.dll=Yes
+C:\WINDOWS\system32\msjter40.dll=Yes
+C:\WINDOWS\system32\msjint40.dll=Yes
+C:\WINDOWS\system32\vbajet32.dll=Yes
+C:\WINDOWS\system32\expsrv.dll=Yes
+C:\WINDOWS\system32\mswstr10.dll=Yes
+C:\WINDOWS\system32\mswdat10.dll=Yes
+C:\WINDOWS\system32\msrd2x40.dll=Yes
+C:\WINDOWS\system32\msrd3x40.dll=Yes
+C:\WINDOWS\system32\msrepl40.dll=Yes
+C:\WINDOWS\system32\msjtes40.dll=Yes
+C:\WINDOWS\system32\VB5DB.DLL=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+L:\AgencyProf\AgencyprofPOPClient.exe=Yes
+L:\AgencyProf\rtfs.ini=Yes
+L:\AgencyProf\Tutorial.com.zip=Yes
+L:\AgencyProf\Tutorial.zip=Yes
+C:\Agencyprof\Agencyprof1.exe=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.9600.17810_none_7c5b6194aa0716f1\comctl32.dll=Yes
+C:\Windows\System32\urlmon.dll=Yes
+C:\Program Files (x86)\Common Files\Microsoft Shared\DAO\dao360.dll=Yes
+C:\Windows\SysWOW64\ieframe.dll=Yes
+C:\Agencyprof\srcado\SHELLLNK.TLB=Yes
+C:\Program Files\Microsoft Office\Office\MSOUTL9.OLB=Yes
+C:\Windows\SysWOW64\COMDLG32.OCX=Yes
+C:\Windows\SysWOW64\CMDLGDE.DLL=Yes
+C:\Windows\SysWOW64\RICHTX32.OCX=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\Windows\SysWOW64\RCHTXDE.DLL=Yes
+C:\Program Files (x86)\BasicAware\EVEWalletAware\MSComCtl.ocx=Yes
+C:\Windows\SysWOW64\Resizer.ocx=Yes
+C:\Windows\SysWOW64\MSFLXGRD.OCX=Yes
+C:\Windows\SysWOW64\FLXGDDE.DLL=Yes
+C:\Windows\SysWOW64\COMCTL32.OCX=Yes
+C:\Windows\SysWOW64\CMCTLDE.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Install Locations]
+L:\AgencyProf\Agencyprof1.exe=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Programme\Microsoft Visual Studio\vb98\Wizards\PDWizard\Redist\comcat.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\vb6de.dll=$(WinSysPath)
+C:\WINNT\system32\uucode32.dll=$(WinSysPath)
+C:\WINNT\system32\WININET.DLL=$(WinSysPath)
+C:\Programme\Gemeinsame Dateien\Microsoft Shared\dao\dao360.dll=$(MSDAOPath)
+C:\WINNT\system32\msjet40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msjter40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msjint40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\mswstr10.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\mswdat10.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msrd2x40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msrd3x40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msrepl40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msjtes40.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\vb5db.dll=$(WinSysPath)
+C:\Programme\Gemeinsame Dateien\System\ado\msado25.tlb=$(WinSysPath)
+C:\WINNT\system32\comdlg32.ocx=$(WinSysPath)
+C:\WINNT\system32\cmdlgde.dll=$(WinSysPath)
+C:\WINNT\system32\richtx32.ocx=$(WinSysPath)
+C:\Programme\Microsoft Visual Studio\vb98\Wizards\PDWizard\Redist\riched32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\rchtxde.dll=$(WinSysPath)
+C:\WINNT\system32\cswsk32.ocx=$(WinSysPath)
+C:\WINNT\system32\mscomctl.ocx=$(WinSysPath)
+C:\WINNT\system32\mscmcde.dll=$(WinSysPath)
+C:\WINNT\system32\Resizer.ocx=$(WinSysPath)
+C:\WINNT\system32\csfed32.ocx=$(WinSysPath)
+C:\Programme\Microsoft Visual Studio\vb98\Wizards\PDWizard\setup.exe=$(AppPath)
+C:\Programme\Microsoft Visual Studio\vb98\Wizards\PDWizard\setup1.exe=$(WinPath)
+C:\WINNT\system32\vb6stkit.dll=$(WinSysPathSysFile)
+C:\Programme\Microsoft Visual Studio\vb98\Wizards\PDWizard\st6unst.exe=$(WinPath)
+L:\AgencyProf\srcado\rtfs.ini=$(AppPath)
+L:\AgencyProf\srcado\wav.zip=$(AppPath)
+L:\AgencyProf\medien.kk\AgencyProf\Tutorial.zip=$(AppPath)
+L:\AgencyProf\apdemo.mdb=$(AppPath)
+L:\AgencyProf\mime.typ=$(AppPath)
+C:\WINNT\system32\msflxgrd.ocx=$(WinSysPath)
+C:\WINNT\system32\flxgdde.dll=$(WinSysPath)
+L:\AgencyProf\medien.kk\AgencyProf\Tutorial.com.zip=$(AppPath)
+L:\AgencyProf\srcado\transtab-de.txt=$(AppPath)
+L:\AgencyProf\srcado\transtab-en.txt=$(AppPath)
+C:\WINNT\system32\mfc42.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\msvcrt.dll=$(WinSysPathSysFile)
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=$(WinSysPathSysFile)
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+L:\AgencyProf\aploader.exe=$(AppPath)
+L:\AgencyProf\zlauncher1.exe=$(AppPath)
+C:\WINNT\system32\COMCTL32.OCX=$(WinSysPath)
+C:\WINNT\system32\CMCTLDE.DLL=$(WinSysPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB6DE.DLL=$(WinSysPath)
+C:\WINDOWS\system32\uucode32.dll=$(WinSysPath)
+C:\WINDOWS\system32\wininet.dll=$(WinSysPath)
+C:\WINDOWS\system32\msjet40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjter40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjint40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\mswstr10.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\mswdat10.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrd2x40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrd3x40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msrepl40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\msjtes40.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB5DB.DLL=$(WinSysPath)
+L:\AgencyProf\srcado\SHELLLNK.TLB=$(WinSysPath)
+C:\WINDOWS\system32\COMDLG32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\CMDLGDE.DLL=$(WinSysPath)
+C:\WINDOWS\system32\richtx32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\RCHTXDE.DLL=$(WinSysPath)
+C:\WINDOWS\system32\cswsk32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCMCDE.DLL=$(WinSysPath)
+C:\WINDOWS\system32\Resizer.ocx=$(WinSysPath)
+C:\WINDOWS\system32\csfed32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MsFlxGrd.ocx=$(WinSysPath)
+C:\WINDOWS\system32\FLXGDDE.DLL=$(WinSysPath)
+C:\WINDOWS\system32\comctl32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\CMCTLDE.DLL=$(WinSysPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+L:\AgencyProf\AgencyprofPOPClient.exe=$(AppPath)
+C:\WINDOWS\system32\SHELLLNK.TLB=$(WinSysPath)
+C:\Programme\BasicAware\EVEWalletAware\MSComCtl.ocx=$(WinSysPath)
+L:\AgencyProf\rtfs.ini=$(AppPath)
+L:\AgencyProf\Tutorial.com.zip=$(AppPath)
+L:\AgencyProf\Tutorial.zip=$(AppPath)
+C:\WINDOWS\system32\pdh.dll=$(WinSysPath)
+C:\WINDOWS\system32\ieframe.dll=$(WinSysPath)
+C:\Programme\Microsoft Office\Office\MSOUTL9.OLB=$(WinSysPath)
+C:\Agencyprof\Agencyprof1.exe=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.9600.17810_none_7c5b6194aa0716f1\comctl32.dll=$(WinSysPath)
+C:\Windows\System32\urlmon.dll=$(WinSysPath)
+C:\Program Files (x86)\Common Files\Microsoft Shared\DAO\dao360.dll=$(MSDAOPath)
+C:\Windows\SysWOW64\ieframe.dll=$(WinSysPath)
+C:\Agencyprof\srcado\SHELLLNK.TLB=$(WinSysPath)
+C:\Program Files\Microsoft Office\Office\MSOUTL9.OLB=$(WinSysPath)
+C:\Windows\SysWOW64\COMDLG32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\CMDLGDE.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\RCHTXDE.DLL=$(WinSysPath)
+C:\Program Files (x86)\BasicAware\EVEWalletAware\MSComCtl.ocx=$(WinSysPath)
+C:\Windows\SysWOW64\Resizer.ocx=$(WinSysPath)
+C:\Windows\SysWOW64\MSFLXGRD.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\FLXGDDE.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\COMCTL32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\CMCTLDE.DLL=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Configure Shared Files]
+Applicable=Yes
+L:\AgencyProf\Agencyprof1.exe=No
+L:\AgencyProf\srcado\rtfs.ini=No
+L:\AgencyProf\srcado\wav.zip=No
+L:\AgencyProf\medien.kk\AgencyProf\Tutorial.zip=No
+L:\AgencyProf\apdemo.mdb=No
+L:\AgencyProf\mime.typ=No
+L:\AgencyProf\medien.kk\AgencyProf\Tutorial.com.zip=No
+L:\AgencyProf\srcado\transtab-de.txt=No
+L:\AgencyProf\srcado\transtab-en.txt=No
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+L:\AgencyProf\aploader.exe=No
+L:\AgencyProf\zlauncher1.exe=No
+L:\AgencyProf\AgencyprofPOPClient.exe=No
+L:\AgencyProf\rtfs.ini=No
+L:\AgencyProf\Tutorial.com.zip=No
+L:\AgencyProf\Tutorial.zip=No
+C:\Agencyprof\Agencyprof1.exe=No
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Distribution]
+Type=single
+Size=
+Title=Agencyprof
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Package]
+PackageFolder=c:\Agencyprof\redist
+ProjectFolder=C:\Agencyprof\srcado
+ServerSideCab=
+File1=c:\Agencyprof\redist\setup.exe
+File2=c:\Agencyprof\redist\Setup.Lst
+File3=c:\Agencyprof\redist\Agencyprof1.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|IconGroups]
+Group0=Agencyprof
+PrivateGroup0=0
+Parent0=$(Programs)
+
+[Package|Standardm‰ﬂiges Setup-Paket 1|Agencyprof]
+Icon1=Agencyprof1.exe
+Title1=Agencyprof
+StartIn1=$(AppPath)
+Key1=Icon2

@@ -1,0 +1,1335 @@
+Ändern Sie nicht den Text in der ersten Zeile.|Do not change the text of the first line.
+gespielt?|perfomed?
+aus|from
+Kalender von|Calendar of
+Adressbuch von|Address book of
+Das Werk ist in folgenden Programmen enthalten:|This work is contained in these programs:
+Das Werk gehört zum Repertoire von|This work belongs to the repertoire of
+E-Mailadresse löschen|delete e-mail address
+Diese E-Mailadresse löschen|delete this e-mail address
+In welchen Programmen wurde ein Werk gespielt?|contained in what programmes?
+Zeichen frei|chars left
+Dieses Memo bedeutet nicht, dass die Mail den Empfänger erreicht hat.|This memo does not say the message was delivered.
+Terminende|EndOfDate
+Sendeprotokoll:|protocol:
+Programm6|programme6
+Programm kopieren|copy program
+Programm3|programme3
+Programm4|programme4
+Agentur1|agency1
+absenden|send
+Ist es richtig geschieben?|Is it spelled correctly?
+Finanzdetails|finacial details
+Email ohne Betrff senden?|Send mail without subject?
+Partner6|partner6
+Partner8|partner8
+Partner11|partner11
+Anhänge|attachments
+Email geschrieben|E-mail written
+Die Betreffzeile ist leer.|Empty subject
+Kein Betreff?|No subject?
+Partner4|partner4
+schliesse aus|exclude
+Repertoire|repertoire
+Partner3|partner3
+Programm2|programme2
+Partner7|partner7
+Partner5|partner5
+Partner10|partner10
+Min.|min
+Partner9|partner9
+Programm5|programme5
+Montag|Monday
+Dienstag|Tuesday
+Mittwoch|Wednesday
+Donnerstag|Thursday
+Freitag|Friday
+Samstag|Saturday
+Sonntag|Sunday
+Check|check
+Dealtype|dealtype
+Currency|currency
+Der Termin sollte ohne Datum gespeichert werden.|You tried to save an event without a valid date."
+Es wurde das heutige Datum eingetragen.|The current date was set.
+Deal|deal
+Besitzer|owner
+ContaoID|ContaoID
+ja|yes
+Memo|memo
+Divers|divers
+Partner2|partner2
+Partner1|partner1
+person: |person: 
+artist: |artist: 
+rel:artist at|rel:artist at
+Beziehungen:|relations:
+ in | in 
+Sa|Sa
+Fr|Fr
+Mo|Mo
+Termine: |events: 
+partner: |partner: 
+rel:agency of|rel:agency of
+Werk zu einem anderen Komponisten verschieben|move work to another composer
+kompnr|kompnr
+Kategorie|category
+KomponistenNummer|composernumber
+Opusjahr|opusyear
+Opusjahr_von|opusyear_from
+April|april
+August|august
+September|september
+November|november
+Personal|personal
+ges. netto|total net
+Text|text
+Kurs|value
+von|from
+in €|in €
+Kuerzel|shortform
+Hauptperson|mainperson
+Orchester - Projekte|orchestra - projects
+Künstler - Projekte|artist - projects
+Kammermusik - Projekte|chambermusic - projects
+Crossover - Projekte|crossover - projects
+Opusjahr_bis|opusyear_to
+Opuscode|opuscode
+Werk verschieben:|move work:
+Werk hinzufügen|add work
+Werk zu einem anderen Komponisten übertragen|move work to another composer
+Adresse kopieren|copy address
+Neue Adresse aus einem Kontakt erstellen|create address from contact
+Neuen Kontakt aus einer Adresse erstellen|create contact from address
+... using explorer|... using explorer
+&Fax|&fax
+www|www
+Abreden von|valedictions of
+PMMail|PMMail
+Saalpläne|hallplans
+Anmeldeprofil|login w. profile:
+Auto-Login|auto-login
+&Auto-Login|&auto-login
+Haupt-Formular - AgencyProf - |Main: - AgencyProf - 
+   Projekte|  projects
+   Tourneeangebote|  touroffers
+&Adressen|&addresses
+VANKD|CTOCUS
+VVONKD|CFROMCUS
+VANLIEF|CTOSUPP
+VVONLIEF|CFROMSUPP
+&Fehler|error-&files
+&GO|
+&Programme|&programmes
+Alle ok|all ok
+Alle löschen|delete all
+Alle wiederherstellen|restore all
+Adresse merken als|save address as
+Diese Adresse merken|save this address
+&Werke|&works
+&alle zeigen|&show &all
+inkl. Kontakte|incl. contacts
+inkl. Adresse|incl. address
+Datei nicht gefunden|file not found
+(Postf.)|(postbox)
+Wirklich löschen?|really delete?
+(oder neue Kennung wählen)|(or choose a new one)
+Endezeit des Termins|end of date
+... im Explorer öffnen|open in explorer
+Abbruch|Cancel
+Zum Löschen Leerzeichen eingeben.|To delete: enter a space
+Abendprogramme|programs
+Abfahrt_ab|depart_from
+Abreise_Hotel|depart_hotel
+Abreise|departure
+Abteilung|department
+Abwahl|deselect
+Achtung! Fehler|beware, error(s)
+Adresse (oder ausgewählten Kontakt) als vCard versenden, Weitergabe der Handynummer einstellbar|export address (or contact) as vCard, check your config about mobile numbers
+Adresse als Dokument|put this address in a document
+Adresse in die Zwischenablage kopieren|copy address to clipboard
+Adresse suchen|search address
+Adressen - AgencyProf|Addresses - Agencyprof
+Adressformular initialisieren|opening addressform
+AgencyProf starten|start AgencyProf
+Agencyprof Log nach Programmabruch|Agencyprof Crashlog
+Agencyprof wird gestartet ...|Starting Agencyprof ...
+Agentur|agency
+Aktuelle Adressen|current addresses
+Aktuelles Datum mit Uhrzeit|date and time
+Alle Projekte, Doppelklick öffnet Projektübersicht|current projects, doubleclick to open
+Alle Tourneeangebote|all touroffers
+Alles für heute Relevante aus dem Kalender|today´s calendar
+Alternative Briefvorlage benutzen|use different letter-template
+AnAdr|ToAdr
+Anhang beachten|please check attachment
+Ankunft_Hotel|arrival_hotel
+Ankunft_in|arrival_in
+Ankunft|arrival_time
+Anmeldung - AgencyProf|AgencyProf Login
+Anmerk_Honorar|note_fee
+Anmerkung|note
+Anrede|salute
+Anreise|arrival
+Ansicht aktualisieren|redraw
+AnzahlDamen|No_of_women
+AnzahlHerren|No_of_men
+Anzahl|amount
+Anzeigen:|show:
+Artikelverwaltung (ADO) wird geöffnet|opening itemdatabase in ADO-mode
+Artikel|item
+Artikel|items
+Auch in Hinweisen suchen|search also in memo
+Auf Wiedersehen!|cu later
+Auftritte und Termine|appointments
+Ausgang|Out
+Ausgewählte Termine als iCalendar exportieren|export the choosen appointments as iCal-dates
+Ausl_LSt|alien_tax
+Ausstellungsdatum|date_issued
+Ausstellungsort|place_issued
+Auszahl_Modus|mode_of_payment
+Auszahlungsmodus|paymode
+Auszeit|timeout
+Autoresponder|autoresponder
+Bahn|railway
+Bankverbindung|bankdetails
+Bearbeiten:|edit:
+Projektbetreuer|projectcontact
+Tourneeleitung|tourmanager
+Beginn|begin
+Behörde|authoroty
+Beleuchtung|lighting
+Bemerkungen - Doppelklick zur vergrößerten Ansicht|memo - doubleclick to enlarge
+Bemerkung|remark
+Benutzerdaten lesen|reading userdata
+Benutzereinstellungen werden geladen|loading usersettings
+Benutzer|user
+Bestand|avail
+Bestand|inventory
+Bestuhlung|seatingchart
+Beteiligt an welchen Auftrittsterminen?|list of appointments included
+Betrag_pro_Stunde|amount_per_hour
+Bios_verschickt|bio_sent
+Bisherige Kontakte zeigen|show contacts so far
+Bitte Ihre Kennung eingeben|please enter your userid
+Bitte geben Sie Ihr Passwort ein|please enter your password
+Bitte tragen sie zuerst in Ihren Einstellungen mysqld und den Server ein.|Please enter your mysql-settings first.
+Bleistift|pencil
+Brief schreiben|write a letter
+Budget_bis|max_budget
+Bundesland|state
+Bus|bus
+Bühnenplan|stage plan
+Computer|computer
+Cross Over-Projekte|crossover projects
+Cross Over-Tourneeangebote|crossover touroffers
+DZ_Künstler|DR_artist
+DZ_Orchester|DR_orchestra
+DZ_Preis|DR_price
+DZ|DR
+Datei|file
+Datenbank (ADO) wird geöffnet|opening ADO-access
+Datenbank (DAO) wird geöffnet|opening DAO-access
+Datenbank (MDB) wird geöffnet|opening MDB-access
+Datenbank-UID|database-uid
+Datenbank-Verzeichnis|database directory
+Datenbankinfo|databaseinfo
+Datenbank|database
+Datum der letzte Änderung|last changed
+Dauer|duration
+Detailliste|details
+Dezember|December
+Dienstleistung|service
+Diese Mediadateien sind hinterlegt|these files attached
+Diese Personengruppen interessieren mich|use these groups
+Dieser Zeitraum interessiert mich|use this period
+Dirigentenpodest|platorm_cond
+Dirigentenpult|desk_conductor
+Dirigent|conductor
+Di|Tu
+Doppelzimmer|doubleroom
+Do|Th
+Druckerei|printing
+EKPreis|purchase_price
+EZ_Künstler|SR_artist
+EZ_Orchester|SR_orchestra
+EZ_Preis|SR_price
+EZ|SR
+Einen Monat vor|next month
+Einen Monat zurück|previous month
+Eingang|In
+Einzelartikel|single article
+Einzelpreis|price_p_p
+Einzelzimmer|singelroom
+Email Kontaktperson|email contact
+Email empfangen|get email
+Email schreiben|write email
+Email senden an Adresse|send email to address
+Email senden an Kontaktperson|send email to contact
+Email-Adresse|email
+Enddatum|enddate
+EtikettenProArtikel|articles per label
+Externe Mail überprüfen|checking external mail
+Familie|family
+Fax Kontaktperson|fax contact
+Fax schreiben|write a fax
+Fax-Nummer|fax
+Fax|fax
+Februar|February
+Fehler:|error:
+Feldertest, weitere Benutzerdaten|checking fields and userdata
+FeldName|Fieldname
+Festivals|festival
+Firma / Name:|company / name:
+Flug|flight
+Formular Adressen öffnen|open address-form
+Formular schiessen|close form
+Formular schiessen|close form
+Formulare vorbereiten und öffnen|preparing forms
+Fotos_verschickt|photos_sent
+FreikartenSonstige|free_tickets_other
+Freikarten|free_tickets
+Freistellung_MwSt|VAT_layoff
+GeoDB wird geöffnet|opening GeoDB
+Geburtsort|place_of_birth
+Geburtstag|birthday
+Geburtstag|date_of_birth
+Gegenstand|object
+Gesamtpreis|total_price
+Haken entfernen, um nur Strasse/Ort zu benutzen|uncheck to use street/city
+Halle|hall
+Handy-Nummer Kontaktperson|mobile number of contakt
+Handy-Nummer|mobile
+Handy|mobile
+Hauptformular initialisieren|opening mainform
+Herzlich willkommen!|Welcome
+Heute aktuell|today
+Heute|Today
+Heutige Termine und laufende Projekte|Today`s appointments and current projects
+Hier angewandte Kategorien|selected categories
+Hier klicken, um Eingabe zu ermöglichen|click here to enter data
+Hier klicken, um Eintrag zu ermöglichen|click here to enter data
+Hier klicken, um Eintrag zu ermöglichen|click here to enter data
+Hier klicken, um Passwort-Eingabe zu ermöglichen|click here to enter password
+Hier sind die Mediadateien gespeichert|mediafiles are saved here
+Hilfskräfte|workers
+Hinweis_Kunde|hint_cust
+Hinweis_Lieferant|hint_suppl
+Hinweise|hints
+Hinweis|hint
+HonorarKünstler|artists_fee
+Honorar_bez|fee_paid
+Honorar|fee
+Honorar1|fee1
+Honorar2|fee2
+Honorar3|fee3
+Honorar4|fee4
+HotelTraegt|hotel_pays
+Hotelaufenthalt|hotelstay
+Hotelaufenthalt|Hotel Stay
+Hotelkosten|hotelcosts
+Hotel|hotel
+NA|N/A
+Zeitraum|period
+Ihr Dokumentenverzeichnis im Explorer öffnen|opens your doc-path using explorer
+Ihr Dokumentenverzeichnis öffnen|open your docpath
+Ihre Benutzer-Kennung|your userid
+Ihre Benutzerkennung|your userid
+Ihre Dokumente anzeigen|shows your documents
+In Adressen suchen|search in addresses
+In Kategorien:|in categories
+In Kontakten suchen|search in contacts
+Info_verschickt|infos_sent
+Instr_Lieferzeit|arrival_instr
+Instr_Transport|transport_instr
+Instrument|instument
+Internet-Adresse besuchen|visit URL
+Internet-Adresse|URL
+InternetBrowser öffnen|open internetbrowser
+Internet|internet
+Januar|January
+Juli|July
+Juni|June
+Kalender schliessen|close calendar
+Kalender öffnen|open calendar
+Kalenderkontrollfeld|Calendarcontrols
+Kalender|Calendar
+Kammermusik-Projekte|chambermusic projects
+Kammermusik-Tourneeangebote|chambermusic touroffers
+Kammermusik|chambermusic
+Kapazität|capacity
+Kartenwunsch|ticketwish
+Kategorie hier entfernen|remove from category
+Kategorie hinzufügen|add to category
+Kategorien der Termine|categories of appointments
+Kategorien:|categories:
+Kd-Nr.|cust#
+Keine Internetverbindung|no internetconnection
+Keine Kontaktperson auswählen|selects nobody
+Klauseln|clauses
+Konfig|config
+Kontakt - Historie|contacthistory
+Kontakt löschen verboten|deleting of contact prohibited
+Adresse löschen verboten|deleting of address prohibited
+Kontakt speichern|save contact
+KontaktOrch|contact_orchestra
+Kontakte|contacts
+Kontakt|contact
+Kunden-Nummer anlegen|customer's number
+KundenNummer|cust-no
+Kundeninfo|cust-info
+Kunde|customer
+GeoDB nicht konfiguriert|GeoDB not configured
+Künstler-Projekte|artists projects
+Künstler-Tourneeangebote|artists touroffers
+Künstlerauftritt|performance
+Künstlerprobe|rehearsal-artist
+Probe|rehearsal
+Künstler|artist
+Künstler1|artist1
+Künstler2|artist2
+Künstler3|artist3
+Künstler4|artist4
+Künstler5|artist5
+Künstler6|artist6
+Künstler7|artist7
+Künstler8|artist8
+Künstler9|artist9
+Künstler10|artist10
+Künstler11|artist11
+Künstler12|artist12
+Künstler13|artist13
+Künstler14|artist14
+Land Postleitzahl Ort|country zip town
+Land|country
+Virenscan mit Clamav|clamav virusscan
+Lieferanten|suppliers
+Lieferant|supplier
+Lösche gesamten Datensatz|delete this record
+Liste löschen|clear list
+Liste verknüpfter Termine|list of linked appointments
+Löschen Kontakt|delete contact
+Löschen gesamten Datensatz|delete all
+Mailempfang konfigurieren|setting up mail
+Mai|May
+Maximal Tage|maximum of days
+Media Dateien|mediafiles
+Medien anzeigen/ verbergen|show / hide mediafiles
+Medien-Pfad öffnen|open mediadirectory
+Medienpfad|mediadir.
+Medien|media
+Memo schreiben|write memo
+Miete|Rent
+Mietpreis|rent
+Mindestbestand|min_stock
+Mitschnitthonorar|recordingfee
+Mitschnitt|recording
+Mi|We
+MwSt_Freistell|VAT_layoff
+MwSt|VAT
+Adress-Kürzel|address-tag
+März|March
+Nachricht|message
+Name Kontaktperson|name of contact
+Namen der Firma|name of company
+Name|name
+Name|name
+Neue Adresse anlegen|create new address
+Neue Biographie anlegen|create a new biography
+Neuen Kontakt anlegen|create new contact
+Neuen Termin anlegen|create a new appointments
+NeuesFeld|newfield
+Notizen|notes
+OBDC-Datenquelle eingeben|enter ODBC-datasource
+Ok, speichern|Ok, save
+Oktober|October
+Doppelklick um die Endezeit zu setzen|Doubleclick to set endingtime
+Postleitzahl|postal code
+Kalenderanzeigeoptionen|calendaroptions
+Kennzeichnet die Adressedaten als vertraulich|Marks as confidential
+vor|ahead
+vertraulich|confidential
+geändert:|updated:
+Orchester-Projekte|orchestra projects
+Orchester-Tourneeangebote|orchestra tour-offers
+Orchesterauftritt|appearance-orchestra
+Orchesterprobe|rehearsal-orchestra
+Orchester|orchestra
+Ort|city
+Ort|city
+PF|postbox
+PG1Erlös|PG1profit
+PG1Name|PG1name
+PG1Preis|PG1price
+PG1Sitze|PG1seats
+PG2Erlös|PG2profit
+PG2Name|PG2name
+PG2Preis|PG2price
+PG2Sitze|PG2seats
+PG3Erlös|PG3profit
+PG3Name|PG3name
+PG3Preis|PG3price
+PG3Sitze|PG3seats
+PG4Erlös|PG4profit
+PG4Name|PG4name
+PG4Preis|PG4price
+PG4Sitze|PG4seats
+PG5Erlös|PG5profit
+PG5Name|PG5name
+PG5Preis|PG5price
+PG5Sitze|PG5seats
+PG6Erlös|PG6profit
+PG6Name|PG6name
+PG6Preis|PG6price
+PG6Sitze|PG6seats
+PG7Erlös|PG7profit
+PG8Erlös|PG8profit
+PG9Erlös|PG9profit
+PLZ / Ort:|country / postalcode:
+PLZPostf|pbpcde
+PLZP|PBPC
+PLZ|zip
+Partner|partner
+Passnummer|passportnumber
+Passwort|password
+Passwort|password
+Person|person
+Pfad zur Mediendatei|path of mediadirectory
+Platzgruppe|seatsgroup
+Pos.|pos.
+Position|position
+Postf. geht vor|pb comes first
+Postfach|postbox
+Postleitzahl des Postfachs|zip of postbox
+Preis|price
+Presse|press
+Proben|rehearsals
+Programme öffnen|open program-form
+Programmupdate läuft|updating program
+Projekte|projects
+Projekt|project
+ProvRechAm|provision_date
+Provision|provision
+Rechnungsadresse|Billing
+Reise|travel
+SU_Künstler|SU_artist
+SU_Orchester|SU_orchestra
+SU_Preis|SU_price
+Saalplan|plan of venue
+Saison/Zeitraum:|season/period:
+Schliessen|close
+Schliesst alle Formulare|close all forms
+Schliesst alle Formulare|close all forms
+Schluss|goodbye
+Schulung|school
+Server|server
+Sitze|seats
+Solist|soloist
+Sonstige|other
+So|Su
+Speichern|save
+Staatsangeh|nationality
+Stand:|last change:
+Strasse:|street:
+Strasse|street
+Straße/ Postfach|street zip
+Stühle|chairs
+Suche in Kontakten:|search contacts:
+Suche in allen Feldern|search all fields
+Suche nach Kontaktpersonen|search contactpeople
+Suchen|search
+Suiten|suits
+Tel-privat|phone_private
+Privat|private
+Telefon Kontaktperson|telephone contact
+Telefon|telephone
+Tel|tel
+Termine u. &Auftritte|appointments (list)
+Termine und Auftritte öffnen|open appointments
+Termine:|appointments:
+Termintypen vorbereiten|preparing engagements
+Termin|appointment
+Theater|theater
+To Do-Liste öffnen|open todo-list
+Tourneeleitung|
+Tourneetag|tourday
+Tournee|tour
+Travelinfo|travelinfo
+URL Kontaktperson|URL of contact
+Urlaubsanschrift|holidayaddress
+Urlaub|holiday
+VKPreis|saleprice
+Veranstalter|promoter
+Veranstaltung|event
+Verkauf|sale
+VersicherungsWert|assurancevalue
+Verwaltungsfunktionen|misc. functions
+Verzeichnis|directory
+VonAdr|FromAdr
+Vorlage|template
+Vorname|forename
+Warenlager|stock
+Weitere Dokumente|more docs
+Werkeverzeichnis öffnen|open works-file
+Wert von|value of
+Wert ändern|change value
+Wiedervorlage|todo
+Wieviel Tage in die Zukunft|how many days ahead
+Wieviel Tage zurück|how many days back
+Word wird gesucht...|searching for Word ...
+Währungen lesen|reading currencies
+Zeige Verknüpfte Termine|show linked appointments
+Zeige nur|show only
+Zum Löschen deaktivieren|deactivate to delete
+Zusatz-Informationen anzeigen/ verbergen|show / hide more infos
+Zusatz-Infos|more infos
+Zusatzfelder je nach gewählten Kategorien|additional infos depending on category
+Zusatzfelder je nach gewählten Kategorien|more data depending on category
+Zusatzfelder|more data
+als_Text_vers|sent_as_text
+anm1|rem1
+anm2|rem2
+bis|to
+druckf_Programm|prog_ready
+druckfertiges_Programm|program2print
+ek|price buy
+erweitert|more
+fertig.|done.
+formel|form
+frei|free
+gedruckt|printed
+geliefert|delivered
+gespeicherte Selektionen|saved selections
+gültig_bis|valid_until
+im Explorer öffnen|using explorer
+kann nicht angemeldet werden|cannot be logged in
+max.Tg.vor|days ahead
+max.Tg.zur.|days past
+neue Bio|new biography
+nur_intern|eyes_only
+ohne Medien|hide media
+ohne Zusätze|less infos
+per Email an Agencyprof|send via email to another AgencyProf
+saveas|save file as...
+savorschlag|suggested
+sofort anmelden|instant login
+sonst_Vergütung|othe_fees
+sonstige_Verg|other_fee
+sqlagent-lokal|
+tescht|kidding
+ustid|VATID
+vk|price sell
+von|from
+weitere Druckvorlagen|more templates
+wird angemeldet|is logging in
+zu öffnendes Verzeichnis|directory to open
+zur.|back
+zzglMwStEK|tax buy
+zzglMwStMietpreis|tax rent
+zzglMwStVK|tax sell
+Überprüfung der Datenbankstruktur|checking structure of database
+Übersetzungen durchführen|doing translations
+öffne Projekt - Finanzen|show project - financial
+öffne Projekt - Übersicht|show project - index
+öffne Projekt|show project
+TourneeplanID|TourID
+Datum|date
+Zeit|time
+Stand|last_update
+Auftrittstyp|engagem.type
+Bezeichnung|term
+% MwSt|% VAT
+Drucken|print
+kopieren|copy
+ausfüllen|fill
+Alarme|alarms
+wiederholen|repeat
+kein Status|no state
+interessiert|interested
+geplant|planned
+bestätigt|confirmed
+hat stattgefunden|took place
+abgesagt|cancelled
+Neue Vorlage für diesen Termintyp erstellen|create new template for this appointment
+Wer|who
+Wer2|who2
+Tätigkeit|activity
+Diesen Auftritt löschen?|delete this appointment?
+Daten löschen|delete data
+Die Vorlage|the template
+existiert nicht|does not exist
+Das Projekt|the project
+Sie haben Daten geändert, möchten Sie speichern?|you have changed something, save it?
+Änderungen speichern?|save changes?
+Herr|Mr.
+Herrn| 
+Frau|Mrs.
+Firma|company
+Typ|type
+Bezeichnung / Hinweise|remarks / hints
+immer Bezeichnung anzeigen|show description only
+Neuer Auftritt|new appointment
+-Typ-Termindatum-User|-type-date-user
+RechNr|invoice no.
+Programm|programme
+Pulte|desks
+Abreise_Hotel|depart_hotel
+Reisen|travels
+Teilnehmer|student
+Lehrer|teacher
+Wegbeschreibung|routedescription
+wo_erreichbar|urgent_contact
+Käufer|buyer
+Verkäufer|seller
+Saal|venue
+Kartenverkauf|ticketsale
+Saalkosten|venuecosts
+Technik|technics
+Instrumente|instruments
+Honorare|fees
+Bilanz|balance
+Werbekosten|advert_costs
+Photos_verschickt|photos_sent
+VertrVeran|AgreemntPromotr
+VertrOrch|AgreemntOrch
+VertrRetour|AgreemntReturn
+Formular schliessen|close window
+Hilfeseite öffnen|open help
+&Antworten|&Reply
+Weiterleiten|forward
+Max. Treffer:|max hits
+Suche|find
+Betreff|subject
+Dokument|document
+Emaileingang|email in
+kann nicht gefunden werden.|cannot be found.
+Historyeintrag löschen?|delete historyrecord?
+Wirklich löschen?|really delete?
+Auch die Dokumente löschen?|do you want me to delete the linked documents also?
+Dokumente löschen?|delete documents?
+Einträge|records
+Kontakthistorie|contacthistory
+Kalender schliessen|close calendar
+ein|one
+einen|one
+Jahr|year
+Monat|month
+zurück|back
+Ansicht aktualisieren|refresh calendar
+Zum 1. des jetzigen Monats|go to 1st of selected month
+Schliesst alle Formulare|closes all unneeded forms
+Adresse dazu|add address
+Adresse entfernen|delete address
+Alle Filter löschen, alles zeigen|clear all filters, show all appontments
+Verkehrsmittel|transportmeans
+Reisebegleitung|guide
+Neues Ereignis|new appointment
+Öffne Projekt|open project
+Neues Projekt|new project
+Öffne Termin|open appointment
+Neuer Termin|new appointment
+Neues Todo|new todo
+Finanzdetails|finacials
+Netto aus Brutto|net from gross
+Eintrag ins Kassenbuch|record in cash journal
+Auftritt speichern|save engagement
+Brutto Endbetrag:|amount gross:
+Summe Netto|amount net
+MwSt|VAT
+Währung|currency
+Anzahl / Dauer|quantity/duration
+Nettobetrag Einzelpr.|amount net / piece
+An|to
+% MwSt|% VAT
+Kalkulation|calculation
+Als Vorlage speichern|save as template
+Eine neue Zeile oberhalb der Markierten hinzufügen|insert one line above mark
+Anzahl der Stellen hinter dem Komma des Ergebnisses|no. of decimals
+Neu berechnen|refresh calculation
+Hilfeseite öfnen|open helppage
+löschen|delete
+Währung oder andere Einheit|currency or other unit
+Vorlage|template
+Rechenschritt|calculate
+Wert|value
+Adresse wählen|choose address
+weitere Adressgruppenkriterien|more criteria for addresses
+CSV-Liste|csv-list
+CSV-Alle|csv-all
+Suchkriterien auf Kontakte (oder Adressen) anwenden|run selection
+gleich|equal
+Serienbrief|serial letter
+alle dazu|add all
+Den markierten Satz löschen|delete marked entry
+gespeicherte Selektionen|saved selections
+Kontakte merken|remember contacts
+Adressen merken|remember addresses
+finde nur so viele Einträge, 0=alle|only find this many, 0=all
+&Kontakt(e) dazu|add &contact(s)
+A&dresse(n) dazu|add A&ddress(es)
+neu|new
+finde nur diese Adressgruppen (leer=suche alles)|find only these categories (empty=search all)
+schliesse aus:|exclude:
+Sortierung|sort by
+Kriterien f. Kontakte|use criteria on contacts
+&LOS|&GO
+mit Kontakten|include contacts
+suche nicht:|do not search
+suche nur:|search only
+Adresstyp(en) auswählen|select categories
+wählen|choose
+neuer Typ:|new type:
+Datenimport aus Agencyprof|import from agencyprof
+alle auswählen|select all
+gewählte importieren|import selected
+Benachrichtigungen|messages
+&Schliessen|&close
+Datenbank mit neuer Struktur erstellen|create database with new structure
+nur für MS-Access-Datenbanken|MS-Access-databases only
+Datenstruktur testen|test database stucture
+Aktualisierung starten, auf Updates prüfen|start, look for updates
+Bitte die Aktualisierung starten|please start updatecheck
+Agencyrof Update|update agencyprof
+am|on
+um|at
+Uhr|o'clock
+Zeitraum|period
+danach|thereafter
+mal, alle|times, every
+Tage|days
+Woche|weeks
+Monate|months
+Jahre|years
+0=nie|0=never
+Anwahlfenster|dialer
+&Anwahl|&dial
+Nummer:|number:
+Programme - AgencyProf|programme
+Programm in die Zwischenablage kopieren|copy programme to clipboard
+Bühnenplan|stage plan
+Besetzung löschen|remove cast
+gespielt|performed
+In welchen Programmen wurde ein Werk gespielt|list of programmes where this work was performed
+Markierten Programmpunkt löschen|delete selected
+Programm ausdrucken|print programme
+abw.|dwnw.
+Programmpunkt eine Position nach unten setzen|move down
+aufw.|upwds.
+Programmpunkt eine Position nach oben setzen|move up
+Programmpunkt hinzufügen|add work
+Programmablauf|programme
+Neues Programm erstellen|new programme
+Gewähltes Programm|selected programme
+Vorhandene Programme|available programmes
+Programm mit Doppelklick auswählen|choose with doublecklick
+Schlagw. li.|perc. left
+Aus der Maximalbesetzung können Sie einen Bühnenplan erstellen|create stage plan from given casts
+Werk in Programmen|work in programmes
+Programmpunkte|programme detail
+Markierter Part|selected part
+Team(s)|team(s)
+Nachricht aufnehmen|record message
+Neue Aufgabe verfassen|create new todo
+Datenreplikator|duplicate data
+Turbo|turbo
+verbinden|connect
+Schliessen, Übertragungen fortsetzen|close, keep connected
+Schliessen, Übertragungen beenden|close connection and close
+Aktualisierung alle|refresh all
+Fallbackverzeichnis|duplicationdirectory
+Fallbackserver|duplicationserver
+Datenbankupgrade|upgrade database
+Telefonnummern|phonenumbers
+Markierte Nummer wählen|dial selected number
+Doppelklick waehlt die Nummer|doubleclick to dial
+Dieses Formular schliessen|close window
+Kontakt Tel   |contact phone  
+Kontakt Handy |contact mobile 
+wählt:|dials:
+aus Hinweis wählt:|from notes dials:
+Tel wählt:|phone dials:
+Handy wählt:|mobile dials:
+Benutzer-Einstellungen AgencyProf|usersettings agencyprof
+Schwarze Liste löschen|delete blacklist
+Import|import
+Passwort, mit dem die Mailpasswörter verschlüsselt werden|password encoding mailpasswords
+Speichern als|save as
+Signatur|signature
+weitere Einstellungen|more settings
+Rechnereinstellungen|computersettings
+Importiere von:|import from:
+mehr Userdaten:|more userdata:
+schwarze Liste:|blacklist:
+PIN:|PIN:
+Benutzer-Daten|userdata
+ja/nein|yes/no
+Benutzerkennung|userid
+Gruppen|groups
+ist Mitglied von|is member of
+msec|msec
+tel|phone
+Mailserver|mailserver
+faxvorlage|faxtemplate
+biefvorlage|lettertemplate
+Mailclient|mailclient
+POP_Passwort|pop_password
+SuchVerzoegerung|searchdelay
+Immer_speichern|save_always
+Kein Import möglich|no import possible
+immer_Kalender|always_calendar
+Neue Benutzereinstellung:|new usersetting:
+Neuer Angebotstyp|new offertype
+Neuer Typ|new type
+Neue Tournee|new tour
+Neue Projekt-ID:|new project-id
+Neues Projekt anlegen|create new project
+Bezeichnung:|label:
+Neue Kalkulation anlegen|vreate new calculation
+Projekt umbenennen|rename project
+Neues Programm|new programme
+In anderes Projekt verschieben|move to another project
+Betreff|subject
+Beschreibung|description
+Neue Beschreibung:|new description
+Neue Beschreibung eingeben|enter new description
+Geben Sie einen Namen für die Vorlage ein:|enter name of template
+Vorlagenname|name of template
+Emailadresse auswählen|select emailaddress
+Finanzdetails|financial details
+Netto aus Brutto|net from gross
+Eintrag ins Kassenbuch|copy to cash book
+Auftritt speichern|save engagement
+Brutto Endbetrag:|sum gross:
+--,--|--,--
+Summe Netto|sum net
+aufgetretene Fehler:|errorlist
+alle löschen|delete all
+&Adresse:|&Address:
+Zurück|back
+Zurück zur vorherigen Seite|back to previous page
+Vor|go to next page
+Weiter zur nächsten Seite|go to next page
+Abbrechen|cancel
+Anhalten|stop
+Neu laden|refresh page
+Aktualisieren|refresh
+Anfang|start
+Startseite|starturl
+Tschüs|c u l8er
+Browser schliessen|close browser
+Maileingang|inbox
+Spamwörer bearbeiten|edit spamwords
+Liste aller Spammerworte bearbeiten. Nach Änderung bitte neu starten oder erneut hier klicken.|edit list of spamwords, restart or click again to reread the list
+Domain z. schwz. Liste|domain to blacklist
+Markiert beim Öffnen alle Einträge der Schwarzen Liste|selects spam on open
+testen|test
+annehmen|accept
+€|€
+zeigen|show
+Markierte Nachrichten löschen|delete selected messages
+vom Server laden|load from server
+zur schwarzen Liste|move to blacklist
+Schwarze Liste|blacklist
+alle von dort|all from there
+invert|invert
+&Bekannte|&well known
+Mailstatus auf allen Servern, Doppelklick zum Aktualisieren|mailstatus on all accounts, doubleclick to refresh
+&Mail testen|test &mail
+Datei auswählen|
+&OK|&OK
+Dateien|files
+Verzeichnisse|directories
+Laufwerk:|drive:
+Land wählen ...|select country
+Mailsafe|mailsafe
+Mail-Details zeigen|show maildetails
+Datum der Email setzen|set date of email
+Reindex|reindex
+Daten für Volltextsuche neu aufbauen|rebuild fulltext-searchindex
+nur meine|only mine
+Volltextsuche|search fulltext
+Suchworter ( keine Umlaute )|search for
+Treffer:|hits:
+Max. Treffer:|max hits:
+Absender|sender
+Eigentümer|owner
+voraus|advance
+Suche:|search:
+vor:|ago:
+Mail-Details|maildetails
+Diese Mail im Explorer öffnen|open this mail in explorer
+Datei:|file:
+Herrn und Frau|Mr. and Mrs.
+Herr und Frau|Mr. and Mrs.
+Neuer Sortiername:|new sortname:
+Kassenbuch|cash book
+Rechnug|invoice
+Abrechnung|deduction
+Summe MwSt|amount VAT
+Netto Endbetrag:|amount net:
+bis:|to:
+Von:|from:
+Datum/Zeit|date/time
+Netto|net
+Brutto|gross
+Vorgang|record
+&Rechnung drucken|
+Endbetrag: |amount: 
+Von|from
+Änderungen|changes
+MwSt ändern|change VAT
+Bruttopreis ändern|change gross price
+Prozentualer Nachlass|discount
+ungelesen|unread
+gelesen|read
+Gespeicherte Selektionen|saved selections
+Selektion ausführen, Ergebnis per Email im Agencyprof-Format|run selection and mail result
+Selektion ausführen, CSV-Datei speichern|run selection and save as csv
+Selektion anzeigen|show selection
+Lege neue Selektion an|new selection
+speichern als|save as
+Email senden|send email
+Senden|send
+a&lle senden|send a&ll
+&NEU|&NEW
+Anhang entfernen|remove attatchment
+Sie können <Drag & Drop> benutzen um Dateien anzufügen|you may use <drag & drop> to attach files
+Anhang hinzufügen|add attachment
+Reply-To:|reply-to:
+Senden bestätigen|acknowledge send
+ext. Client|ext. client
+gepeicherte Mail:|saved mail:
+aus Adressen|from addresses
+Interne|internals
+Meldungen|messages
+Password|password
+Username|username
+blinde Kopie an|blind copy to
+Verteiler|distributor
+Anhänge|attachments
+Status|status
+Tabellenkalkulation|spreadsheet
+Beendet die Kalkulation|close sheet
+Vorlage (neu) öffnen|(re)open template
+Andere Vorlage laden oder Name der Vorlage beim <Speichern als Vorlage>|load other template or name of template using <save as>
+Alle Änderungen verwerfen|drop all changes
+löschen dieser Kalkulation|delete this sheet
+Neu berechnen, Ansicht aktualisieren|refresh
+Datenherkunft zeigen|show datasource
+Tournee-Angebote - AgencyProf|tour offers - agencyprof
+Zum Projekt|open project
+Interne Anmerkung|internal note
+Anmerkung, die mitgedruckt wird|note not to be printed
+scrollen, wenn nicht alle sichtbar|scroll of needed
+a&lle zeigen|show a&ll
+Markierung abwählen|deselect
+Neue Angebotsliste|new offerlist
+Angebotslisten      >>|offerlists    >>
+Arten von Angebotslisten|offertypes
+Alarm setzen|set alarm
+Adressdetails|addressdetails
+Anfangsdatum|startdate
+ID der Tournee|id of project
+Liste der Tourneen|list of projects
+Tourneen|tours
+Doppelklick zum Auswählen|doubleclick to select
+ab|from_
+Intern|internal
+Angebotslisten|offerlists
+Solisten|soloists
+To Do Liste - AgencyProf|todo list - agencyprof
+gewählte Nachricht bearbeiten|edit selected todo
+Lege neue Nachricht an|create new todo
+Zeige To Do-Liste|show todo-list
+Inhalt der ausgewählten Nachricht|content of selected todo
+Nachrichten für gewählten Benutzer|selected user´s todo
+Liste der Nachrichten|list of todos
+Liste aller Nachrichten|list of all todos
+Projekte - AgencyProf|projects - agencyprof
+Neue Kalkulation hinzufügen|Add new spreadsheet
+Liste der aufgerufenen Projekte löschen. (Löscht NICHT das Projekt)|clear list of last projects (does not delete any projects)
+Projektverzeichnis im Explorer öffnen|open directory of projects using explorer
+erstellt nur einen Termin (falls ein Datum eingetragen ist)|creates one appointment (if date is given)
+Leere Termine erstellen|create empty appointments
+Neuen Beteiligten hinzufügen|create new involved address
+Zeige mehr Details|show more details
+Benachrichtigung bei Änderung der Daten|alarm if data changes
+&drucken|&print
+Programme drucken|print programmes
+Alle anzeigen|show &all
+Leere löschen|delete empty
+Bleistift löschen|delete pencil
+Programme|programmes
+Alle Termine vom Typ Bleistift löschen?|delete all events of type pencil?
+Das geht nicht. Weder der Typ Zeitraum, noch der Typ Bleistift sind vorhanden.|Not possible. Type period or pencil do not exist.
+Neu|new
+Künstlerauftritte erstellen|create artist-engagement
+Orchesterauftritte erstellen|create orchestra-engagement
+Kalkulationen neu berechnen|recalculate sheets
+Kalkulation öffnen oder neu aus einer Vorlage erstellen|open spreadsheet or create new from template
+Kalkulationen|spreadsheets
+Erstellen:|create:
+weitere Beteiligte|involved addresses
+Doppelklick zum Umbenennen|doubleclick to rename
+Ein Term.|one app.
+Doppelklick=heute|doubleclick=today
+Funktion|function
+Projekt-ID:|project-id:
+Minuten|minutes
+Komponist hat Werke. Löschen nicht möglich.|You connot delete a composer with works
+Keine Programme gefunden.|no programmes found.
+Komponistendaten|composer´s data
+hier|here
+Werkdaten|work´s data
+Die Datei kann nicht geschrieben werden:|file cannot be written
+kann nicht gelöscht werden. Es sind Auftritte vorhanden.|cannot be deleted as long as it contains appointments.
+kann nicht gelöscht werden. Es sind Programme verknüpft.|cannot be deleted as long as it contains programmes.
+Projekt löschen?|delete project?
+Termine initialisieren?|initialize appointments?
+Vorlage unbekannt:|unknown template:
+Min.|min
+Netto:|net:
+MwSt:|VAT:
+Brutto:|gross:
+WertNetto:|value net:
+(Vorlage)|(template)
+Programmvorschlag|suggested programme
+AnmerkungIntern|internal_notes
+Werkeverzeichnis|list of works
+&Export|&export
+Markiertes Werk in die Zwischenablage kopieren|copy selected work to clipboard
+Werk kopieren|copy work
+&HTML|&html
+Auf neue Daten prüfen|ask for new data
+Hinweise in Datei speichern|save notes to file
+Ende|end
+Pos1|pos1
+Datenverzeichnis für dieses Werk im Explorer öffnen|open work´s directory using explorer
+Komponistenverzeichnis im Explorer öffnen|open composers´s directory using explorer
+Wrk.übertrgn|xfer work
+Suche das Werk bei bei Google|google this work
+Suche den Künstler bei Google|google this composer
+Komponistendaten an Werke@AgencyProf.de versenden|publish work using werke@agencyprof.de
+Notenverzeichnis|score´s directory
+Liste der Bezugsquellen (alle Werke/Komponisten)|list of sources
+Den markierten Satz um eine Position nach unten|selected movement one position down
+auf|up
+Den markierten Satz um eine Position nach oben|selected movement one position up
+Alle Sätze des Werkes|all movements of this work
+Neuen Satz anlegen|new movement
+Satz suchen|search movement
+alle|all
+streng|strict
+wo gespielt?|played where?
+Liste der Orte, an denen dieses Werk schon gespielt wurde|List of places where this work was played
+Neues Werk anlegen|add new work
+Interne Notizen|internal notes
+Nummer im Werkverzeichnis|Number
+Werkverzeichnis|list of works
+Namensergänzung, Bemerkung|further names, additions
+Offizieller Name des Werkes|official name of work
+Nummer des Werkes|number of work
+Werk speichern|save work
+Tonart|key
+Jahr der Fertigstellung der Komposition|year of completion
+Jahr des Beginns der Komposition|begin of completion
+Komplett in welchem Jahr geschrieben|year of creation
+Dauer des Gesamtwerks|duration of work
+Musikalische Besetzung|music-cast
+wird automatisch zusammengesetzt|will be build automatically
+Komponisten speichern|save composer
+Todesdatum|date of death
+Geburtsdatum|date of birth
+Andere Schreibweisen des Komponistennamens|other writings of composer´s name
+Todesjahr|year of death
+Geburtsjahr|year of birth
+Biografische Daten|biographical data
+Vorname(n)|surname(s)
+ID|id
+Werk suchen|search work
+Neuer Komponist|new composer
+Liste der Werke des markierten Komponisten|selected composer´s list of works
+Komponisten suchen|search composer
+Ausgewählten anklicken|click selected
+löschen verboten|deleting prohibited
+vollständig und korrekt eingegeben|entered completely and correct
+autorisiert|authorized
+Sätze|movements
+Werke|works
+Komponist|composer
+Vornamen|surnames
+Daten|data
+Nummer|number
+Alternativschreibweisen|alternative_writing
+Opusname1|opusname1
+Opusname2|opusname2
+OpusNummer|opusnumber
+Opusbezeichnung|opusterm
+Besetzung|cast
+Empfange Mailheader ...|receiving mailheader ...
+Nachrichten|messages
+ von | of 
+PIN fehlt|missing code
+Geburtstagsliste|birthdaylist
+Geburtstag|birthday
+Tagen|days
+Tournee|tournee
+Wollen Sie diese Nachricht(en) wirklich löschen?|really delete these messages?
+Historyeintrag löschen?|delete history record?
+Sorry, nur "SELECT" ist möglich|sorry, only "SELECT" possible
+kein Dateiname!|no filename!
+Datei löschen: |delete file: 
+Wirklich |really delete  
+ Sätze löschen?| records?
+ löschen?| delete?
+nicht gefunden|not found
+Vor einer Strukturänderung in der Datenbank sollte eine Datensicherung durchgeführt werden.|before changing the structure of the database you should make a backup.
+Datenstruktur muss geändert werden.|the structure of the database has to be changed
+Die Vorlage existiert nicht.|template does not exist
+Die Vorlage existiert bereits, überschreiben?|template exists, replace?
+Unerlaubtes Zeichen in der ID|illegal character in id
+Dieser Sortiername existiert bereits.|sortname already exists
+Löschen Sie zuerst alle Kontaktpersonen.|delete contacts first.
+Die Datei existiert bereits. Überschreiben?|file exists, replace?
+Vorhandene Datei löschen?|delete existing file?
+Das Land ist bisher nicht bekannt.|unknown country.
+Land aufnehmen?|new country?
+Die Adresse wurde diesen Kategorien zugeordnet:|the address was connected to these categories:
+Das Umbenennen einer Adresse ist potentiell gefährlich.|renaming an address might drop some connections.
+z.B. werden die zugehörigen Verzeichnisse nicht umbenannt.|related directories will not be renamed.
+Haben Sie eine Datensicherung durchgeführt?.|did you make a backup of the database?
+Sortiernamen ändern?|change sortname?
+Dieser Sortiername existiert bereits.|this sortname already exists.
+Sie haben Ihre eigenen Daten geändert. Das Programm wird neu gestartet.|you changed your own data - program will be restarted.
+Bitte geben Sie einen Benutzernamen an.|please enter your username.
+Notenverzeichnis öffnen / erstellen|open / create directory for scores
+mehr_Solisten|more_soloists
+briefvorlage|letter-template
+erster_Wochentag|first_dayof_week
+http://www.agencyprof.de/tutorial|http://www.agencyprof.com/tutorial
+01-Inhalt.htm|01-toc.htm
+02-Anmeldung.htm|02-Login.htm
+03-Benutzereinstellungen.htm|03-Usersettings.htm
+04-Hauptformular.htm|04-Main-window.htm
+05-Wiedervorlagen.htm|05-ToDo.htm
+06-Adressen.htm|06-Addresses.htm
+07-Werkeverzeichnis.htm|07-Works.htm
+09-Buehnenplaene.htm|09-Stage-Plans.htm
+10-Termine.htm|10-Appointments.htm
+11-Tourneeangebote.htm|11-Tour-offers.htm
+12-Projekte.htm|12-Projects.htm
+15-Andere_Dinge.htm|15-Other_Things.htm
+16-Artikel.htm|16-Items.htm
+Todestag|day_of_death
+Anfangsdatum des Projekts fehlt.|Start-date of project is missing.
+Währ.|currency
+muss auch sein:|has to be:
+OpenGeoDB benutzen|use OpenGeoDB
+OpenGeoDB ist nicht konfiguriert|OpenGeoDB is not configured
+Doppelklick zur Datenermittlung mit OpenGeoDB|doublevlick here to check data with OpenGeoDB
+Ort wählen|select city
+GeoDB wirg geöffnet|opening GeoDB
+Zeige in Karte|show in map
+Karte zeigen|show map
+unbekannt|unknown
+ ersetzen durch | replace with 
+ersetzen|replace
+Bitte wählen Sie zuerst ein Programm|Select a program first
+ja: in allen Programmen ersetzen|yes: replace everywhere
+nein: nur hier ersetzen|no: only here
+Die Vorwahl|the areacode
+der Telefonnummer|of the phonenumber
+der Faxnummer|of the faxnumber
+kann nicht bestätigt werden.|cannot be confirmed.
+Bekannte Vorwahlen für diese Postleitzahl:|known areacodes for this postcode:
+leer|empty
+gleich|equals
+enthält|contains
+beginnt mit|starts with
+letzte Änderung:|last change:
+Halle\|Saal|hall\|venue
+geändert|changed
+Dieser Einstellungsname ist reserviert.|This setting is reserved. You cannot use this name.
+Einstellung existiert bereits.|This setting already exists.
+Rechnungsnummer|invoiceno.
+Datenänderung|data changed
+Neuer Projekttyp?|new project-type?
+Neuen Projekttyp anlegen?|add new project-type?
+Dekade|decade
+Die gezeigte Adresse wurde neu angelegt. Bitte vervollständigen Sie diese.|The shown address was added. Please update.
+Farbe im Kalender|calendar-color
+Kalenderteilung in Minuten|calendarscaling in minutes
+Endet|ends
+Sichtbar für: (leer=alle)|visible for: (empty=all)
+unsichtbar für:|invisible for:
+Einstellungen speichern|save settings
+NICHT IHR KALENDER|THIS IS NOT YOUR CALENDAR
+benutze|using
+Fehler in clamscanfile.|error in clamscanfile.
+Mindestens ein Virus gefunden in|at least one virus found in
+Virenscanner öffnen, Clamsdcan gefunden und aktiv.|click to open virusscanner. clamsdcan found und active.
+Virenscanner öffnen, Clamscan gefunden und aktiv (Clamdscan ist schneller).|click to open virusscanner. clamscan found und active (clamdscan recommended).
+Verzeichnis öffnen|open directory
+Nummer wählen|dial number
+Nummer:|number:
+(wird erst nach Neuöffnung des Formulars angezeigt)|will be displayed after reopening the form
+Neuer Wert|new value
+Waerhung|Currency
+(Leerzeichen zum Löschen)|space to delete
+Neuer Wert von|new value of
+Anzahl der Termine im gewählten Zeitraum|number of dates during selected timespan
+Die Postleitzahl ist nicht erkennbar.|cannot recognize the postalcode.
+Adressgruppen|addresstypes
+Beziehungen|relations
+Rechtsklick|rightclick
+Windows TAPI läuft nicht und kann nicht gestartet werden.|Windows Telephony dialing application is running and none could be started.
+Die Wählwarteschlange ist voll.|The queue of pending Windows Telephony dialing requests is full.
+Die Telefonnummer ist ungültig.|The phone number is not valid.
+Unbekannter Fehler.|Unknown error.
+Fehler bei der Anwahl : |Error dialing number : 
+wird geöffnet|is being opened
+WebKalender|Webcalendar
+immer am 1.|always on 1st
+Dekaden|decades
+Prioritäten|priorities
+RadioTV|radio/TV
+keine Liste|no list
+Ehrenkarten|FreeTickets
+Notenwender|Page Turner
+Notenwender|PageTurner
+Abendkleidung|Dress Code
+Abendkleidung|DressCode
+Als neuen Filter speichern|save as new filter
+Adressen im Umkreis um eine Postleitzahl suchen|search within radius around postalcode
+löscht die Adresse und fügt die Beziehung hinzu|removes address and adds relation
+beim Starten öffnen|open on programstart
+Folgt der gewählten Beziehung und fügt die Adressen hinzu|follow selected relation and add the addresses
+Partner|Other Artist
+Tageskalender|Diary
+Mitarbeiter|Staff member
+Tageskalender öffnen|open diary
+UND statt ODER:|AND not OR:
+UND-dazu|add with AND
+ODER-dazu|add with OR
+Mx.Tg.|mx.days
+Frage bearbeiten|edit checkpoint
+:hallo?' --> Reminder mit der Frage 'hallo?' heute.|:hello?' --> Reminder asking 'hello?' today.
+Syntax: Datum der Erinnerung:Text der Frage|Syntax: Date of reminder:Text of question
+vor |ahead
+Neuer Checkpoint|New checkpoint
+Sortiername und eindeutiger Bezeichner der Adresse, Doppelklick zum umbenennen|Unique identyfier: doubleclick to change
+Die Datei|The file
+Fehler #|Error #
+mehr ... es werden nur 100 Einträge gezeigt.|more ... only 100 records are shown.
+LAN-Verbindung|LAN-Connection
+neue Bez.:|new rel.:
+TourneeLtg|TourneeLtg
+Notenwender|Page turner
+Konzertkleidung|Dress
+vom|of
+nicht leer|not empty
+ignoriere diese Adressgruppen|ignore these address groups
+Veranstalter1|promoter1
+Saal|venue
+Postanrede|salute postal
+Verdächtige Zeichen in ausgeschnittenem Text.|check template for characters in this text
+nicht gefunden, benutzt wird|not found, using
