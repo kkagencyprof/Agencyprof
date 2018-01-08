@@ -261,7 +261,6 @@ End Sub
 Private Sub Form_Load()
 Dim i
 
-'d2infile = "abos": d2insub = "Form_Load"
 axsResizer1.SaveControlPositions
 nochg = 1
 Me.Top = form1.mylasttop(Me.name)
@@ -273,13 +272,11 @@ BackColor = form1.cleancolor()
 
 End Sub
 Private Sub Form_Resize()
-'d2infile = "abos": d2insub = "Form_Resize"
 axsResizer1.Resize
 End Sub
 
 
 Private Sub Form_Unload(Cancel As Integer)
-'d2infile = "abos": d2insub = "Form_Unload"
 Hide
 On Error GoTo exuld
 Call form1.setmylasttop(Me.name, Me.Top)
