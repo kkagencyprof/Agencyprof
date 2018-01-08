@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "MSComCtl.ocx"
 Object = "{E5A19D51-DD6B-11D4-AB81-BBEAD055682C}#1.0#0"; "Resizer.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSComCtl.ocx"
 Begin VB.Form tplan 
    BackColor       =   &H00E0E0E0&
    Caption         =   "Projekte - AgencyProf"
@@ -2018,6 +2018,9 @@ Call savecheck
 Call nulldsp
 Me.BackColor = form1.cleancolor()
 neuid$ = trm(InputBox(transe("Neue Projekt-ID:"), transe("Neues Projekt anlegen"), ""))
+neuid$ = strrepl(trm(neuid$), "/", "_")
+neuid$ = strrepl(neuid$, "'", "´")
+neuid$ = strrepl(neuid$, "&", "_")
 If neuid$ <> "" Then
   Call Command3_Click
   Text1(0).text = neuid$
