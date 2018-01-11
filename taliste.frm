@@ -1,5 +1,4 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
 Begin VB.Form taliste 
    BackColor       =   &H00E0E0E0&
    Caption         =   "   Tournee-Angebote - AgencyProf"
@@ -27,7 +26,7 @@ Begin VB.Form taliste
       EndProperty
       Height          =   255
       Left            =   9960
-      TabIndex        =   80
+      TabIndex        =   78
       ToolTipText     =   "Link entfernen"
       Top             =   480
       Width           =   255
@@ -599,34 +598,6 @@ Begin VB.Form taliste
       Top             =   2280
       Visible         =   0   'False
       Width           =   6135
-   End
-   Begin MSComctlLib.ListView gd2 
-      Height          =   1335
-      Left            =   8760
-      TabIndex        =   78
-      Top             =   720
-      Width           =   1455
-      _ExtentX        =   2566
-      _ExtentY        =   2355
-      LabelWrap       =   -1  'True
-      HideSelection   =   -1  'True
-      FullRowSelect   =   -1  'True
-      GridLines       =   -1  'True
-      _Version        =   393217
-      ForeColor       =   -2147483640
-      BackColor       =   -2147483643
-      BorderStyle     =   1
-      Appearance      =   1
-      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      NumItems        =   0
    End
    Begin VB.Label Label4 
       BackStyle       =   0  'Transparent
@@ -2374,7 +2345,7 @@ Private Sub Text1_DblClick(Index As Integer)
 'd2infile = "taliste": d2insub = "Text1_DblClick"
 If Index = 4 Or Index = 5 Then
   With frmCalendar
-    .Init Text1(Index), Text1(Index).text
+    .init Text1(Index), Text1(Index).text
     .Show vbModal, Me
     If (.SelectionOK) Then
       Text1(Index).text = Format(.SelectedDate, "dd.mm.yyyy")
