@@ -1172,8 +1172,8 @@ rtmp.MoveFirst
 While Not rtmp.EOF
   If Not IsNull(rtmp!programmid) Then
     t$ = rtmp!programmid
-    If Not IsNull(rtmp!Veranstaltungsort) And InStr(t$, trm(rtmp!Veranstaltungsort)) = 0 Then t$ = t$ & " in " & rtmp!Veranstaltungsort
-    If Not IsNull(rtmp!anfangsdatum) Then t$ = t$ & " am " & rtmp!anfangsdatum
+'    If Not IsNull(rtmp!Veranstaltungsort) And InStr(t$, trm(rtmp!Veranstaltungsort)) = 0 Then t$ = t$ & " in " & rtmp!Veranstaltungsort
+'    If Not IsNull(rtmp!anfangsdatum) Then t$ = t$ & " am " & rtmp!anfangsdatum
     List1.AddItem t$
   End If
   rtmp.MoveNext
