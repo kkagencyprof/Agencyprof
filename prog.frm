@@ -1048,8 +1048,9 @@ d2infile = "prog": d2insub = "Command9_Click"
 li% = List1.ListIndex
 
 id$ = List1.List(li%)
-p% = InStr(id$, " in "): If p% > 0 Then id$ = Left$(id$, p% - 1)
-p% = InStr(id$, " am "): If p% > 0 Then id$ = Left$(id$, p% - 1)
+'in, am not added any more
+'p% = InStr(id$, " in "): If p% > 0 Then id$ = Left$(id$, p% - 1)
+'p% = InStr(id$, " am "): If p% > 0 Then id$ = Left$(id$, p% - 1)
 If id$ = "" Then Exit Sub
 
 Set r = New ADODB.Recordset
@@ -1237,8 +1238,9 @@ li% = List1.ListIndex
 Call nulldsp
 
 id$ = List1.List(li%)
-p% = InStr(id$, " in "): If p% > 0 Then id$ = Left$(id$, p% - 1)
-p% = InStr(id$, " am "): If p% > 0 Then id$ = Left$(id$, p% - 1)
+'in, am not added any more
+'p% = InStr(id$, " in "): If p% > 0 Then id$ = Left$(id$, p% - 1)
+'p% = InStr(id$, " am "): If p% > 0 Then id$ = Left$(id$, p% - 1)
 If id$ = "" Then Exit Sub
 
 Set rtmp = New ADODB.Recordset
@@ -1895,8 +1897,9 @@ If li% < 0 Then Exit Sub
 oksel.Clear
 Command14.Enabled = False
 id$ = List1.List(li%)
-p% = InStr(id$, " in "): If p% > 0 Then id$ = Left$(id$, p% - 1)
-p% = InStr(id$, " am "): If p% > 0 Then id$ = Left$(id$, p% - 1)
+'in, am not added any more
+'p% = InStr(id$, " in "): If p% > 0 Then id$ = Left$(id$, p% - 1)
+'p% = InStr(id$, " am "): If p% > 0 Then id$ = Left$(id$, p% - 1)
 If id$ = "" Then Exit Sub
 cmd$ = "select auftrittsid from auftritthigru where felddaten='" + id$ + "' and feldname='Programm'"
 
