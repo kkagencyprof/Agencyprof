@@ -7197,15 +7197,22 @@ Call form1.openthisdoc(fn$, "")
 End Sub
 
 Public Function dayofweek(dtg) As String
-Dim d$
+Dim d$, rrr
 
 'd2infile = "Form1": d2insub = "dayofweek"
 dayofweek = ""
 d$ = ""
 If trm(dtg) <> "" Then
+  On Error Resume Next
   d$ = dayname(Weekday(dtg))
+  rrr = Err
+  On Error GoTo 0
 End If
-dayofweek = form1.inmylanguage(d$)
+If rrr = 0 Then
+  dayofweek = form1.inmylanguage(d$)
+Else
+  dayofweek = "n/a"
+End If
 End Function
 Public Function longdayofweek(dtg) As String
 
