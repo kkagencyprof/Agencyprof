@@ -3,15 +3,22 @@ Object = "{E5A19D51-DD6B-11D4-AB81-BBEAD055682C}#1.0#0"; "Resizer.ocx"
 Begin VB.Form werkvz 
    BackColor       =   &H00E0E0E0&
    Caption         =   "Werkeverzeichnis"
-   ClientHeight    =   8250
+   ClientHeight    =   8625
    ClientLeft      =   60
    ClientTop       =   345
    ClientWidth     =   14415
    LinkTopic       =   "Form2"
    MinButton       =   0   'False
-   ScaleHeight     =   8250
+   ScaleHeight     =   8625
    ScaleWidth      =   14415
    StartUpPosition =   3  'Windows-Standard
+   Begin VB.TextBox Text7 
+      Height          =   285
+      Left            =   12000
+      TabIndex        =   140
+      Top             =   8160
+      Width           =   1575
+   End
    Begin VB.TextBox Text6 
       Height          =   285
       Left            =   8280
@@ -43,7 +50,7 @@ Begin VB.Form werkvz
       Left            =   12000
       TabIndex        =   129
       Top             =   7800
-      Width           =   1575
+      Width           =   2055
    End
    Begin VB.TextBox Text3 
       Height          =   285
@@ -163,7 +170,7 @@ Begin VB.Form werkvz
       Sorted          =   -1  'True
       TabIndex        =   113
       ToolTipText     =   "Liste der Werke des markierten Komponisten"
-      Top             =   8520
+      Top             =   9480
       Width           =   5535
    End
    Begin VB.CommandButton Command15 
@@ -182,7 +189,7 @@ Begin VB.Form werkvz
       Left            =   3960
       TabIndex        =   112
       ToolTipText     =   "Liste aller gespeicherten Dokumente"
-      Top             =   6960
+      Top             =   7320
       Width           =   1335
    End
    Begin VB.CommandButton Command14 
@@ -199,24 +206,24 @@ Begin VB.Form werkvz
    Begin VB.PictureBox Picture4 
       Height          =   375
       Index           =   1
-      Left            =   7320
+      Left            =   7200
       Picture         =   "werkvz.frx":018A
       ScaleHeight     =   315
       ScaleWidth      =   315
       TabIndex        =   110
-      Top             =   7680
+      Top             =   8040
       Visible         =   0   'False
       Width           =   375
    End
    Begin VB.PictureBox Picture4 
       Height          =   375
       Index           =   0
-      Left            =   6960
+      Left            =   6840
       Picture         =   "werkvz.frx":0314
       ScaleHeight     =   315
       ScaleWidth      =   315
       TabIndex        =   109
-      Top             =   7680
+      Top             =   8040
       Visible         =   0   'False
       Width           =   375
    End
@@ -345,7 +352,7 @@ Begin VB.Form werkvz
       Height          =   255
       Left            =   5400
       TabIndex        =   100
-      Top             =   6960
+      Top             =   7320
       Width           =   495
    End
    Begin VB.CommandButton Command23 
@@ -362,19 +369,19 @@ Begin VB.Form werkvz
       Height          =   255
       Left            =   5400
       TabIndex        =   99
-      Top             =   6600
+      Top             =   6960
       Width           =   495
    End
    Begin VB.PictureBox Picture3 
       AutoSize        =   -1  'True
       Height          =   360
       Index           =   1
-      Left            =   6600
+      Left            =   6480
       Picture         =   "werkvz.frx":1A5E
       ScaleHeight     =   300
       ScaleWidth      =   300
       TabIndex        =   98
-      Top             =   7680
+      Top             =   8040
       Visible         =   0   'False
       Width           =   360
    End
@@ -382,12 +389,12 @@ Begin VB.Form werkvz
       AutoSize        =   -1  'True
       Height          =   360
       Index           =   0
-      Left            =   6240
+      Left            =   6120
       Picture         =   "werkvz.frx":1F50
       ScaleHeight     =   300
       ScaleWidth      =   285
       TabIndex        =   97
-      Top             =   7680
+      Top             =   8040
       Visible         =   0   'False
       Width           =   345
    End
@@ -484,7 +491,7 @@ Begin VB.Form werkvz
       Left            =   3960
       TabIndex        =   87
       ToolTipText     =   "Liste der Bezugsquellen (alle Werke/Komponisten)"
-      Top             =   6600
+      Top             =   6960
       Width           =   1335
    End
    Begin VB.CommandButton Command12 
@@ -494,7 +501,7 @@ Begin VB.Form werkvz
       Left            =   5880
       TabIndex        =   76
       ToolTipText     =   "Den markierten Satz um eine Position nach unten"
-      Top             =   6960
+      Top             =   7320
       Width           =   375
    End
    Begin VB.CommandButton Command11 
@@ -504,11 +511,11 @@ Begin VB.Form werkvz
       Left            =   5880
       TabIndex        =   75
       ToolTipText     =   "Den markierten Satz um eine Position nach oben"
-      Top             =   6600
+      Top             =   6960
       Width           =   375
    End
    Begin VB.ListBox List4 
-      Height          =   1560
+      Height          =   1920
       IntegralHeight  =   0   'False
       Left            =   3480
       OLEDropMode     =   1  'Manuell
@@ -525,7 +532,7 @@ Begin VB.Form werkvz
       Style           =   1  'Grafisch
       TabIndex        =   73
       ToolTipText     =   "Den markierten Satz löschen"
-      Top             =   6600
+      Top             =   6960
       Width           =   375
    End
    Begin VB.CommandButton Command8 
@@ -536,7 +543,7 @@ Begin VB.Form werkvz
       Style           =   1  'Grafisch
       TabIndex        =   72
       ToolTipText     =   "Neuen Satz anlegen"
-      Top             =   6600
+      Top             =   6960
       Width           =   375
    End
    Begin VB.TextBox Text4 
@@ -551,7 +558,7 @@ Begin VB.Form werkvz
    End
    Begin Resizer.axsResizer axsResizer1 
       Left            =   360
-      Top             =   9120
+      Top             =   10080
       _ExtentX        =   820
       _ExtentY        =   820
    End
@@ -682,7 +689,7 @@ Begin VB.Form werkvz
       Left            =   12000
       TabIndex        =   58
       Text            =   "Text4"
-      Top             =   9360
+      Top             =   10320
       Visible         =   0   'False
       Width           =   615
    End
@@ -739,7 +746,7 @@ Begin VB.Form werkvz
       Left            =   4320
       TabIndex        =   50
       Text            =   "Text4"
-      Top             =   9255
+      Top             =   10215
       Visible         =   0   'False
       Width           =   615
    End
@@ -750,7 +757,7 @@ Begin VB.Form werkvz
       Left            =   3240
       TabIndex        =   48
       Text            =   "Text4"
-      Top             =   9240
+      Top             =   10200
       Visible         =   0   'False
       Width           =   615
    End
@@ -770,7 +777,7 @@ Begin VB.Form werkvz
       Left            =   2040
       TabIndex        =   45
       Text            =   "Text4"
-      Top             =   9240
+      Top             =   10200
       Visible         =   0   'False
       Width           =   855
    End
@@ -800,7 +807,7 @@ Begin VB.Form werkvz
       Index           =   8
       Left            =   4920
       TabIndex        =   8
-      Top             =   8640
+      Top             =   9600
       Visible         =   0   'False
       Width           =   735
    End
@@ -973,6 +980,15 @@ Begin VB.Form werkvz
       Top             =   480
       Width           =   495
    End
+   Begin VB.Label Label20 
+      BackStyle       =   0  'Transparent
+      Caption         =   "ISRC:"
+      Height          =   255
+      Left            =   11160
+      TabIndex        =   139
+      Top             =   8220
+      Width           =   615
+   End
    Begin VB.Label Label19 
       BackStyle       =   0  'Transparent
       Caption         =   "Librettist"
@@ -1039,10 +1055,10 @@ Begin VB.Form werkvz
       BackStyle       =   0  'Transparent
       Caption         =   "GEMA #:"
       Height          =   255
-      Left            =   11040
+      Left            =   11160
       TabIndex        =   128
-      Top             =   7800
-      Width           =   855
+      Top             =   7860
+      Width           =   735
    End
    Begin VB.Label Label15 
       BackStyle       =   0  'Transparent
@@ -1257,7 +1273,7 @@ Begin VB.Form werkvz
       BackColor       =   &H00E0E0E0&
       BackStyle       =   1  'Undurchsichtig
       BorderStyle     =   0  'Transparent
-      Height          =   2895
+      Height          =   3135
       Left            =   3360
       Shape           =   4  'Gerundetes Rechteck
       Top             =   4560
@@ -1341,7 +1357,7 @@ Begin VB.Form werkvz
       Index           =   9
       Left            =   11520
       TabIndex        =   57
-      Top             =   9375
+      Top             =   10335
       Visible         =   0   'False
       Width           =   615
    End
@@ -1413,7 +1429,7 @@ Begin VB.Form werkvz
       Index           =   3
       Left            =   3600
       TabIndex        =   49
-      Top             =   9270
+      Top             =   10230
       Visible         =   0   'False
       Width           =   615
    End
@@ -1425,7 +1441,7 @@ Begin VB.Form werkvz
       Index           =   2
       Left            =   2760
       TabIndex        =   47
-      Top             =   9255
+      Top             =   10215
       Visible         =   0   'False
       Width           =   615
    End
@@ -1437,7 +1453,7 @@ Begin VB.Form werkvz
       Index           =   0
       Left            =   1560
       TabIndex        =   44
-      Top             =   9255
+      Top             =   10215
       Visible         =   0   'False
       Width           =   855
    End
@@ -1468,7 +1484,7 @@ Begin VB.Form werkvz
       Index           =   8
       Left            =   4080
       TabIndex        =   38
-      Top             =   8640
+      Top             =   9600
       Visible         =   0   'False
       Width           =   1095
    End
@@ -1491,7 +1507,7 @@ Begin VB.Form werkvz
       Index           =   6
       Left            =   960
       TabIndex        =   36
-      Top             =   9240
+      Top             =   10200
       Visible         =   0   'False
       Width           =   615
    End
@@ -1569,7 +1585,7 @@ Begin VB.Form werkvz
       BackColor       =   &H00C0C0C0&
       BackStyle       =   1  'Undurchsichtig
       BorderStyle     =   0  'Transparent
-      Height          =   8055
+      Height          =   8415
       Left            =   3240
       Shape           =   4  'Gerundetes Rechteck
       Top             =   120
@@ -3169,6 +3185,8 @@ cmd$ = "update w_loc set s14='" + trm(Text5.text) + "' where id= '" + id$ + "'"
 Call form1.sqlqry(cmd$)
 cmd$ = "update w_loc set s13='" + trm(Text6.text) + "' where id= '" + id$ + "'"
 Call form1.sqlqry(cmd$)
+cmd$ = "update w_loc set s12='" + trm(Text7.text) + "' where id= '" + id$ + "'"
+Call form1.sqlqry(cmd$)
 If Not form1.isfieldmissing("opt_stimmton", "id") Then
   cmd$ = "delete from opt_stimmton where id= '" + id$ + "'": Call form1.sqlqry(cmd$)
   If trm(txtStimmton.text) <> "" Then
@@ -3958,6 +3976,10 @@ Private Sub Text6_Change()
 Call Text5_Change
 End Sub
 
+Private Sub Text7_Change()
+Call Text5_Change
+End Sub
+
 Private Sub Timer1_Timer()
 Dim s$, rtmp As ADODB.Recordset, i%, c$, ca$, j%, cb$, kid$, rrr, sworte As Integer, sorder$
 
@@ -3986,7 +4008,7 @@ c$ = "SELECT id,name,KomponistenNummer FROM w_loc where ("
 ca$ = ""
 For j% = 0 To i%
   If ca$ <> "" Then ca$ = ca$ & "and "
-  ca$ = ca$ & "(instr(lcase(name),'" + swrd$(j%) + "')>0 or instr(lcase(s14),'" + swrd$(j%) + "')>0 or instr(lcase(s13),'" + swrd$(j%) + "')>0) "
+  ca$ = ca$ & "(instr(lcase(name),'" + swrd$(j%) + "')>0 or instr(lcase(s14),'" + swrd$(j%) + "')>0 or instr(lcase(s13),'" + swrd$(j%) + "')>0) or instr(lcase(s12),'" + swrd$(j%) + "')>0) "
 Next j%
 cb$ = ""
 kid$ = ""
@@ -4257,6 +4279,7 @@ If Not rtmp.EOF Then
 End If
 Text5.text = trm(rtmp!s14)
 Text6.text = trm(rtmp!s13)
+Text7.text = trm(rtmp!s12)
 renum% = 0
 Set rtmp = New ADODB.Recordset
 rtmp.CursorLocation = adUseServer

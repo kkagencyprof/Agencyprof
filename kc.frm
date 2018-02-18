@@ -850,6 +850,7 @@ Dim id$, prj As Boolean
 
 'd2infile = "kc": d2insub = "List1_DblClick"
 prj = False
+If List1.ListIndex < 0 Then Exit Sub
 id$ = List1.List(List1.ListIndex)
 If InStr(id$, " Projekt: ") > 0 Then prj = True
 id$ = Mid$(id$, InStr(id$, "(AID:") + 5)
