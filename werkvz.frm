@@ -4008,7 +4008,7 @@ c$ = "SELECT id,name,KomponistenNummer FROM w_loc where ("
 ca$ = ""
 For j% = 0 To i%
   If ca$ <> "" Then ca$ = ca$ & "and "
-  ca$ = ca$ & "(instr(lcase(name),'" + swrd$(j%) + "')>0 or instr(lcase(s14),'" + swrd$(j%) + "')>0 or instr(lcase(s13),'" + swrd$(j%) + "')>0) or instr(lcase(s12),'" + swrd$(j%) + "')>0) "
+  ca$ = ca$ & "(instr(lcase(name),'" + swrd$(j%) + "')>0 or instr(lcase(s14),'" + swrd$(j%) + "')>0 or instr(lcase(s13),'" + swrd$(j%) + "')>0 or instr(lcase(s12),'" + swrd$(j%) + "')>0) "
 Next j%
 cb$ = ""
 kid$ = ""
