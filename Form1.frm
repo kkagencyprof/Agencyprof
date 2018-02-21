@@ -15573,7 +15573,7 @@ Dim lo$, rrr, w$, desc$, usr$, typ$, dtg$, adrb$, aid$, gmtdiff$, timedirect$, p
 Dim c$, i As Integer, aelist As String, aalist As String, aalistlimited As String
 Dim rtmp As ADODB.Recordset, t1$, t2$, t3$, tx1$, ttt As String, desclimited$, adatum As String
 Dim ftst As ADODB.Recordset, axlist As String, tlist As String, tdiff
-Dim fi As ADODB.Recordset, j, sharethis$, wht$
+Dim fi As ADODB.Recordset, j, sharethis$, wht$, pdelim$
 Dim fa As ADODB.Recordset, favalid As Boolean, nocreats As Boolean
 Dim ra As ADODB.Recordset, r As ADODB.Recordset
 
@@ -15682,9 +15682,10 @@ aalistlimited = ""
                   prp$ = cut_d1(c$, "=")
                   prpn$ = cut_d2bis(c$, "=")
                 End If
+                pdelim$ = ", ": If LCase(prp$) = "ort" Then pdelim$ = " "
                 prp$ = getAdrProperty(t2$, prp$)
                 If prp$ <> "" Then
-                  If w$ <> "" Then w$ = w$ + ", "
+                  If w$ <> "" Then w$ = w$ + pdelim$
                   w$ = w$ + trm(prpn$ + " " + prp$)
                 End If
               Wend
