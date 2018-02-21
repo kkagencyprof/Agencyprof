@@ -12984,7 +12984,7 @@ Set rtmp = New ADODB.Recordset
 rtmp.CursorLocation = adUseServer
 rrr = form1.adoopen(rtmp, "SELECT id,name FROM kontakt where vid='" + vid$ + "'", adoc, adOpenDynamic, adLockReadOnly, d2infile, d2insub)
 While Not rtmp.EOF
-  If rtmp!name = kid$ Then
+  If trm(rtmp!name) = kid$ Then
     get_kontaktid_by_name = rtmp!id
     Exit Function
   End If
