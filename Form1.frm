@@ -1898,7 +1898,7 @@ End Sub
 Sub hgradrsuch(s$)
 Dim rtmp As ADODB.Recordset, r As ADODB.Recordset, rrr, cmd$, i9%, na$, l$
 Dim nsuch As String, addit As Boolean, rcnt%, whkrit$, id$
-Dim w1 As String, rest As String, p1%, ktid As String
+Dim w1 As String, rest As String, P1%, ktid As String
 
 Dim d2infile As String, d2insub As String
 d2infile = "Form1": d2insub = "hgradrsuch"
@@ -1954,7 +1954,7 @@ End Sub
 Sub rlist1(s$)
 Dim rtmp As ADODB.Recordset, rrr, cmd$, i9%, na$, l$
 Dim nsuch As String, addit As Boolean, rcnt%, whkrit$, id$
-Dim w1 As String, rest As String, p1%, ktid As String, als$, ij%
+Dim w1 As String, rest As String, P1%, ktid As String, als$, ij%
 Dim s1$, ca$, cb$, z$, swrd$(6), i%
 Dim d2infile As String, d2insub As String
 d2infile = "Form1": d2insub = "rlist1"
@@ -2560,18 +2560,18 @@ Call handbuchcall("04-Hauptformular.htm")
 
 End Sub
 Public Sub handbuchcall(p$)
-Dim u$, p1$
+Dim u$, P1$
 Dim brw$, X
 
-p1$ = transe(trm(p$))
-If p1$ = "" Then p1$ = "index.html"
+P1$ = transe(trm(p$))
+If P1$ = "" Then P1$ = "index.html"
 Unload frmBrowser
 DoEvents
 u$ = form1.getusersetting("Handbuch", transe("http://www.agencyprof.de/tutorial"))
 If u$ = "" Then
-  u$ = "file:///" & form1.s0dir() & "/handbuch/" & p1$
+  u$ = "file:///" & form1.s0dir() & "/handbuch/" & P1$
 Else
-   u$ = u$ & "/" & p1$
+   u$ = u$ & "/" & P1$
 End If
 brw$ = form1.UseBrowser()
 If brw$ <> "" Then
@@ -4427,7 +4427,7 @@ Dim c$
   Unload frmBrowser
   DoEvents
   brwhidden = True
-  frmBrowser.StartingAddress = "http://tine.agencyprof.de/askutf828559-1.php?ut=" + utf8$
+  frmBrowser.StartingAddress = "http://ask.agencyprof.com/askutf828559-1.php?ut=" + utf8$
   Load frmBrowser
   DoEvents
   While frmBrowser.brwWebBrowser.Busy
@@ -14373,7 +14373,7 @@ If LCase(upop$) = "dir:inbox" Then
   r.CursorLocation = adUseServer
   rrr = form1.adoopen(r, c$, form1.adoc, adOpenDynamic, adLockReadOnly)
   If Not r.EOF Then
-    Print #o%, "popuser=" + trm(r!user)
+    Print #o%, "popuser=" + trm(r!User)
     Print #o%, "popserver=" + trm(r!server)
     Print #o%, "popport=" + trm(r!Port)
     Print #o%, "poppsswd=" + trm(r!psswd)
@@ -14396,7 +14396,7 @@ r.CursorLocation = adUseServer
 rrr = form1.adoopen(r, c$, form1.adoc, adOpenDynamic, adLockReadOnly)
 While Not r.EOF
   If r!id <> "PDFServer" Then
-    Print #o%, r!id; "|"; r!server; "|"; r!user; "|"; r!psswd; "|"; trm(r!Port)
+    Print #o%, r!id; "|"; r!server; "|"; r!User; "|"; r!psswd; "|"; trm(r!Port)
   End If
   r.MoveNext
 Wend
