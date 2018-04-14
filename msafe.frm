@@ -861,7 +861,8 @@ End If
   End If
   vsu$ = ""
   If vsuch.value <> 0 Then
-    vsu$ = connwrd$ & "instr(lcase(mailsafe.volltext),'" + LCase(s$) + "')>0 "
+    'vsu$ = connwrd$ & "instr(lcase(mailsafe.volltext),'" + LCase(s$) + "')>0 "
+    vsu$ = connwrd$ & "mailsafe.volltext like '%" + LCase(s$) + "% "
   End If
   c$ = "SELECT mailsafe.id as msgid, mailsafe.frm as sender, " + _
                     "mailsafe.Subject as sbj, mailsafe.Header as hdr, " + _
@@ -876,7 +877,8 @@ End If
     c$ = c$ & " and (" & vbd$ & ") "
   End If
   End If
-  c$ = c$ & " ORDER BY mailsafe.erstellt DESC;"
+  'c$ = c$ & " ORDER BY mailsafe.erstellt DESC;"
+  c$ = c$ & " ORDER BY mailsafe.erstellt DESC limit 1," + trm(10 * shm) + ";"
 
 Set r = New ADODB.Recordset
 r.CursorLocation = adUseServer
