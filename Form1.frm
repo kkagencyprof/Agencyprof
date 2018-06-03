@@ -15393,7 +15393,7 @@ If Not cloud Then Exit Function
   rrr = Err
   On Error GoTo 0
   If rrr = 0 Then
-    If Not r.EOF Then Exit Function
+    If r.EOF Then Exit Function
   Else
     Exit Function
   End If
