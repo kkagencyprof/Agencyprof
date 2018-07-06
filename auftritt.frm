@@ -3811,6 +3811,7 @@ If LCase(clickgetsfromtable(i%)) = "adrselect" Then
     sida$ = trm(Mid(sid$, p% + 1)): sida$ = Left(sida$, Len(sida$) - 1)
   End If
   If Len(sida$) > 0 Then
+    If sidk$ = "" And InStr(LCase$(transo(formtranso(Label2(i% + 1).Caption))), "kontakt") = 1 Then sidk$ = Text2(i% + 1).text
     Load shwAdrDetail
     Call shwAdrDetail.refreshadrdetail(sida$, sidk$)
     On Error Resume Next
@@ -4868,7 +4869,7 @@ End Sub
 Private Sub Label2_DblClick(Index As Integer)
 Dim i%, neuwert, tpid$, matchlen%, neukwert, fn$, p%, X, cgft$, lcounter As Integer
 Dim r As ADODB.Recordset, rtmp As ADODB.Recordset, cmd$, opn As Boolean, listno As Integer
-Dim s1 As ADODB.Recordset, P1%, preis$, preisfeld$, neudraw As Boolean, l2c$, gn$
+Dim s1 As ADODB.Recordset, p1%, preis$, preisfeld$, neudraw As Boolean, l2c$, gn$
 Dim lvitem, ort As String, abvno As Integer, rrr, currl As String, nid$
 Dim neuid As String
 

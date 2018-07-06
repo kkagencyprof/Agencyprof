@@ -1855,7 +1855,7 @@ End Sub
 
 Public Sub getwerkebyort(adr$, kid$)
 Dim r As ADODB.Recordset, rr1
-Dim s As ADODB.Recordset, V%, smiet As String, typlist(3) As String, tli As Integer
+Dim s As ADODB.Recordset, V%, smiet As String, typlist(15) As String, tli As Integer, tlicnt As Integer
 Dim a$, i As Integer, ol As Integer, j As Integer, k As Integer
 Dim d2infile As String, d2insub As String
 
@@ -1863,6 +1863,14 @@ d2infile = "dochist2": d2insub = "getwerkebyort"
 typlist(0) = "konzerte"
 typlist(1) = "künstlerauftritt"
 typlist(2) = "orchesterauftritt"
+j = 0
+For i = 0 To 9
+  typlist(3 + j) = LCase(form1.getusersetting("wogespielt" + trm(i), ""))
+  If typlist(3 + j) <> "" Then
+    j = j + 1
+  End If
+Next i
+tlicnt = 2 + j
 aktwerk$ = ""
 Command4.Visible = True
 csvx.Visible = False
@@ -1906,7 +1914,7 @@ Call savecheck
   End If
   ol = 0
   While Not r.EOF
-    For tli = 0 To 2
+    For tli = 0 To tlicnt
     cmd$ = "SELECT auftritt.Datum as dtg,auftritt.id as aid, auftritt.Bezeichnung, auftritt.Ort, usr_" + typlist(tli) + ".* "
     cmd$ = cmd$ + "FROM auftritt INNER JOIN usr_" + typlist(tli) + " ON auftritt.id = usr_" + typlist(tli) + ".id "
     cmd$ = cmd$ + "WHERE usr_" + typlist(tli) + ".programm='" + trm(r!programmid) + "' order by auftritt.datum desc"
@@ -1977,3 +1985,4 @@ Call savecheck
   Next i
   Me.MousePointer = 0
 End Sub
+
