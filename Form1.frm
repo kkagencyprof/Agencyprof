@@ -15615,33 +15615,32 @@ aalistlimited = ""
       If t1$ = "programm" Then
         t1$ = t2$: t2$ = ""
       End If
-      If t1$ = "adrselect" Then
-        If Not form1.isfieldmissing("auftrittsfelder", "opthordeshare") Then
-          If ftst!opthordeshare = 1 Then
-            sharethis$ = ""
-            If Not form1.isfieldmissing("auftrittsfelder", "opthordesharewhat") Then
-              wht$ = trm(ftst!opthordesharewhat)
-              If wht$ <> "" Then
-                sharethis$ = "(" + wht$ + ")"
+      If Not form1.isfieldmissing("auftrittsfelder", "opthordeshare") Then
+        If ftst!opthordeshare = 1 Then
+          sharethis$ = ""
+          If Not form1.isfieldmissing("auftrittsfelder", "opthordesharewhat") Then
+            wht$ = trm(ftst!opthordesharewhat)
+            If wht$ <> "" Then
+              sharethis$ = "(" + wht$ + ")"
+            End If
+          End If
+          aalistlimited = aalistlimited + "|" + t2$
+          aelist = aelist + "|" + t2$
+          aalist = aalist + "|" + sharethis$ + t2$
+          If t2$ = "" Or t1$ = "Programm" Then
+            c$ = LCase(t1$)
+            If InStr(c$, "auszahl") = 0 And InStr(c$, "klauseln") = 0 And InStr(c$, "provision") = 0 And InStr(c$, "honorar") = 0 And InStr(c$, "intern") = 0 Then
+              aalist = aalist + "|" + t1$
+              If Not form1.isfieldmissing("auftrittsfelder", "opthordeshare") Then
+                If ftst!opthordeshare = 1 Then aalistlimited = aalistlimited + "|" + t1$ + "|"
               End If
             End If
-            aalistlimited = aalistlimited + "|" + t2$
-          End If
-        End If
-        aelist = aelist + "|" + t2$
-        aalist = aalist + "|" + sharethis$ + t2$
-      End If
-      If t2$ = "" Or t1$ = "Programm" Then
-        c$ = LCase(t1$)
-        If InStr(c$, "auszahl") = 0 And InStr(c$, "klauseln") = 0 And InStr(c$, "provision") = 0 And InStr(c$, "honorar") = 0 And InStr(c$, "intern") = 0 Then
-          aalist = aalist + "|" + t1$
-          If Not form1.isfieldmissing("auftrittsfelder", "opthordeshare") Then
-            If ftst!opthordeshare = 1 Then aalistlimited = aalistlimited + "|" + t1$ + "|"
           End If
         End If
       End If
       ftst.MoveNext
     Wend
+    If aelist = "" And aalist = "" Then Exit Sub
     desclimited$ = ""
     If aelist <> "" Then aelist = aelist + "|"
     If aalist <> "" Then aalist = aalist + "|"
