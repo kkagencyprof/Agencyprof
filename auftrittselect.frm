@@ -436,6 +436,10 @@ Else
   selstr$ = selstr$ + " and "
 End If
 selstr$ = selstr$ + "(datum>='" + dv$ + "' and datum<='" + db$ + "')"
+If Left(vtxts$, 4) = "id==" Then
+  selstr = selstr + " and id='" + Mid$(vtxts$, 5) + "'"
+  vtxts$ = ""
+End If
 Call form1.dbg2f(selstr$)
 Set r = New ADODB.Recordset
 r.CursorLocation = adUseServer
