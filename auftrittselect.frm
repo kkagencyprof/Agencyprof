@@ -11,6 +11,16 @@ Begin VB.Form auftrittselect
    ScaleHeight     =   3840
    ScaleWidth      =   6960
    StartUpPosition =   3  'Windows-Standard
+   Begin VB.CommandButton Command4 
+      Caption         =   "get from list"
+      Enabled         =   0   'False
+      Height          =   255
+      Left            =   240
+      TabIndex        =   16
+      Top             =   3120
+      Visible         =   0   'False
+      Width           =   1815
+   End
    Begin VB.CommandButton Command3 
       Caption         =   "XML"
       Height          =   375
@@ -337,6 +347,20 @@ MousePointer = 0
 X = Shell("notepad.exe " + xml$, 1)
 End Sub
 
+Private Sub Command4_Click()
+'Dim o%, l$
+
+'If nexist("c:\temp\idlist.txt") Then Exit Sub
+'List1.Clear
+'o% = FreeFile
+'Open "c:\temp\idlist.txt" For Input As #o%
+'While Not EOF(o%)
+'  Line Input #o%, l$
+'  List1.AddItem l$ + " (AID:" + Mid$(l$, 5)
+'Wend
+'Close #o%
+End Sub
+
 Private Sub Command6_Click()
 Dim i%
 
@@ -528,6 +552,11 @@ DoEvents
 Load auftritt
 Call auftritt.SetFocus
 Call auftritt.showrec(id$, 0)
+''just a special task
+'auftritt.BackColor = form1.dirtycolor()
+'auftritt.Command10.Enabled = True
+'Call auftritt.Command10_Click
+'''
 MousePointer = 0
 End Sub
 Private Function getsel() As String
