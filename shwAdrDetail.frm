@@ -6,7 +6,7 @@ Begin VB.Form shwAdrDetail
    ClientHeight    =   6525
    ClientLeft      =   3345
    ClientTop       =   3960
-   ClientWidth     =   12345
+   ClientWidth     =   12420
    BeginProperty Font 
       Name            =   "Small Fonts"
       Size            =   6.75
@@ -21,7 +21,7 @@ Begin VB.Form shwAdrDetail
    LinkTopic       =   "Form2"
    MinButton       =   0   'False
    ScaleHeight     =   6525
-   ScaleWidth      =   12345
+   ScaleWidth      =   12420
    Begin VB.CheckBox stcky 
       BackColor       =   &H00C0C0C0&
       BeginProperty Font 
@@ -8008,7 +8008,7 @@ End If
 If contact$ <> "" Then
   For i% = 0 To klist.ListCount - 1
     'If InStr(klist.List(i%), contact$) = 1 Or InStr(contact$, klist.List(i%)) = 1 Or idxlist.List(i%) = contact$ Then
-    If klist.List(i%) = contact$ Or idxlist.List(i%) = contact$ Then
+    If Left(klist.List(i%), Len(contact$)) = contact$ Or idxlist.List(i%) = contact$ Then
       klist.ListIndex = i%
       BackColor = form1.cleancolor()
       Exit Sub

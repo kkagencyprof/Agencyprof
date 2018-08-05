@@ -897,25 +897,26 @@ Open fn$ For Output As #o%
 Print #o%, apv
 Print #o%, aplv
 Close #o%
-fn$ = App.Major & "-" & App.Minor & dbx$ & ".dbini"
-o% = FreeFile
-Open fn$ For Output As #o%
-Print #o%, App.Revision
-For i% = 0 To form1.sqla.TableDefs.Count - 1
-  If Left$(LCase(form1.sqla.TableDefs(i%).name), 4) <> "msys" Then
-    t$ = form1.sqla.TableDefs(i%).name
-    tx$ = Left$(t$, 4)
-    If tx$ <> "tmp_" And tx$ <> "usr_" And tx$ <> "opt_" Then
-      For j% = 0 To form1.sqla.TableDefs(i%).Fields.Count - 1
-        f$ = form1.sqla.TableDefs(i%).Fields(j%).name
-        ty = form1.sqla.TableDefs(i%).Fields(j%).Type
-        le = form1.sqla.TableDefs(i%).Fields(j%).Size
-        Print #o%, t$; "."; f$; "."; trm(ty); "."; trm(le)
-      Next j%
-    End If
-  End If
-Next i%
-Close #o%
+'removing creation of .dbini file (not used any more)
+'fn$ = App.Major & "-" & App.Minor & dbx$ & ".dbini"
+'o% = FreeFile
+'Open fn$ For Output As #o%
+'Print #o%, App.Revision
+'For i% = 0 To form1.sqla.TableDefs.Count - 1
+'  If Left$(LCase(form1.sqla.TableDefs(i%).name), 4) <> "msys" Then
+'    t$ = form1.sqla.TableDefs(i%).name
+'    tx$ = Left$(t$, 4)
+'    If tx$ <> "tmp_" And tx$ <> "usr_" And tx$ <> "opt_" Then
+'      For j% = 0 To form1.sqla.TableDefs(i%).Fields.Count - 1
+'        f$ = form1.sqla.TableDefs(i%).Fields(j%).name
+'        ty = form1.sqla.TableDefs(i%).Fields(j%).Type
+'        le = form1.sqla.TableDefs(i%).Fields(j%).Size
+'        Print #o%, t$; "."; f$; "."; trm(ty); "."; trm(le)
+'      Next j%
+'    End If
+'  End If
+'Next i%
+'Close #o%
 MousePointer = 0
 X = Shell("notepad.exe " & fn$, 1)
 

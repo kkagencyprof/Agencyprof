@@ -3146,6 +3146,7 @@ If InStr(s0d$, "\ldrv\") > 0 Then
   s0d$ = "l:\" + s0d$
 End If
 localdir = s0d$
+If nexist("startlog.yes") Then starting = False
 weckerpresent = False
 If Not nexist(s0d$ + "\wecker.exe") Then weckerpresent = True
 usrprofile$ = ""
@@ -13697,6 +13698,7 @@ Sub startlog(wer$, was$)
 Dim o%
 
 'd2infile = "Form1": d2insub = "startlog"
+If Not starting Then Exit Sub
 If was$ = "" Then
   On Error Resume Next
   Kill "startlog_" & wer$ & ".txt"
@@ -16075,7 +16077,7 @@ iamdemo = False
 If InStr(LCase(form1.computername), "wapdemo") = 1 And Len(form1.computername) = 8 Then iamdemo = True
 End Function
 Public Sub updateme()
-Dim nfn$, url$, X As Boolean, o%, l0$, l1$, rrr
+Dim nfn$, url$, X As Boolean, o%, l0$, l1$, rrr, updl$
 Dim apv As Long, aplv As Long, rstart As Boolean
 Dim xapv As Long, xaplv As Long
 
@@ -16084,6 +16086,7 @@ rstart = False
 apv = App.Revision
 aplv = hexstring2dec(bas_getAPLibVersion())
 
+updl$ = ""
 If Not nexist(form1.s00dir() + "\AgencyprofRestart.exe") Then
   On Error Resume Next
   Kill form1.s00dir() + "\AgencyprofRestart.exe"
@@ -16137,6 +16140,13 @@ If Not nexist(nfn$) Then
   If rrr <> 0 Then
     xapv = 0: xaplv = 0
   End If
+  On Error Resume Next
+  Kill nfn$
+  On Error GoTo 0
+End If
+If xapv = 0 Then
+  MsgBox "Cannot get public version numbers."
+  Exit Sub
 End If
 '--------------
 If xapv > apv Then
@@ -16160,6 +16170,8 @@ If Not X Then
 Else
   rstart = True
 End If
+Else
+  updl$ = "Agencprof1.exe: published #" + trm(xapv) + ", local #" + trm(apv)
 End If
 If xaplv > aplv Then
 url$ = "http://www.agencyprof.de/download/update/agencyproflib.dll"
@@ -16182,7 +16194,11 @@ If Not X Then
 Else
   rstart = True
 End If
+Else
+  If updl$ <> "" Then updl$ = updl$ + vbCrLf
+  updl$ = updl$ + "agencyproflib.dll: No update needed, published version " + trm(xaplv) + ", local version " + trm(aplv)
 End If
+If updl$ <> "" Then MsgBox updl$
 If rstart Then
   MsgBox transe("restarting to finish update.")
   Call form1.unloadall
