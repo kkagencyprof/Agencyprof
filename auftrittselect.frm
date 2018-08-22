@@ -461,7 +461,7 @@ Else
 End If
 selstr$ = selstr$ + "(datum>='" + dv$ + "' and datum<='" + db$ + "')"
 If Left(vtxts$, 4) = "id==" Then
-  selstr = selstr + " and id='" + Mid$(vtxts$, 5) + "'"
+  selstr = selstr + " id='" + Mid$(vtxts$, 5) + "'"
   vtxts$ = ""
 End If
 Call form1.dbg2f(selstr$)
