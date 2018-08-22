@@ -461,7 +461,7 @@ Else
 End If
 selstr$ = selstr$ + "(datum>='" + dv$ + "' and datum<='" + db$ + "')"
 If Left(vtxts$, 4) = "id==" Then
-  selstr = selstr + " id='" + Mid$(vtxts$, 5) + "'"
+  selstr = "where id='" + Mid$(vtxts$, 5) + "'"
   vtxts$ = ""
 End If
 Call form1.dbg2f(selstr$)
@@ -487,7 +487,7 @@ While Not r.EOF And abreq% = 0
     End If
   End If
   If shw Then
-    msg$ = form1.dayofweek(r!datum) + ", " & r!datum & " " & form1.get_atabkz(r!auftrittstyp)
+    msg$ = form1.dayofweek(r!datum) + ", " & trm(r!datum) & " " & form1.get_atabkz(trm(r!auftrittstyp))
     If Not IsNull(r!ort) Then msg$ = msg$ & " " & r!ort & " "
     msg$ = msg$ & "(" & r!bezeichnung & ")"
     msg$ = msg$ & Space$(80) + "(AID:" & r!id
@@ -504,6 +504,7 @@ MousePointer = 0
 Exit Sub
 exr1:
 abreq% = 1
+MousePointer = 0
 DoEvents
 On Error GoTo 0
 
