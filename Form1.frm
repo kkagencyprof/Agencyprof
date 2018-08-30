@@ -8783,7 +8783,9 @@ rrr = form1.adoopen(a, "SELECT * FROM usr_" & utabn(rtmp!auftrittstyp) & " where
                     honvalid = 0
                     provtyp = 0
                     If l4adr$ = "" Then felddaten$ = ProvisionFuerAuftrittByAdr(id$, l4adr$)
-                    If felddaten$ <> "" Then
+                    felddaten$ = strrepl(felddaten$, Chr$(10), " ")
+                    felddaten$ = strrepl(felddaten$, Chr$(13), " ")
+                    If trm(felddaten$) <> "" Then
                       If InStr(felddaten$, "/") > 0 Then
                         thismwst = var2dbl(trm(cut_d1(trm(cut_d2bis(felddaten$, "/")), "%"))) * 100
                         felddaten$ = trm(cut_d1(felddaten$, "/"))
