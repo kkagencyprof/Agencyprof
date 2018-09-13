@@ -548,6 +548,29 @@ Call auftritt.showrec(evid$, 0)
 
 End Sub
 
+Private Sub List3_KeyDown(KeyCode As Integer, Shift As Integer)
+Dim i%, j%, c$, hordeid$
+
+If KeyCode = 46 Or KeyCode = 8 Then
+  i% = List3.ListIndex: j% = i%
+  If i% < 0 Then Exit Sub
+  c$ = List3.List(i%)
+  If InStr(c$, "(AP:") = 0 Then
+    MsgBox "you can only remove events"
+    Exit Sub
+  End If
+  i% = InStr(c$, "(ID:") + 4
+  If i% >= Len(c$) Then Exit Sub
+  hordeid$ = Mid$(c$, i%)
+  i% = InStr(hordeid$, ")") - 1
+  hordeid$ = Left(hordeid$, i%)
+  c$ = "delete from kronolith_events where event_id='" + trm(hordeid$) + "'"
+  Debug.Print c$
+  Call form1.qhorde(c$)
+  List3.RemoveItem j%
+End If
+End Sub
+
 Private Sub Timer2_Timer()
 Dim c As Long, i%, cmd As String
 Dim w As Long, r As Long, g As Long, b As Long

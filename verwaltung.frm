@@ -261,7 +261,7 @@ Begin VB.Form verwaltung
       Width           =   1095
    End
    Begin VB.CommandButton Command11 
-      Caption         =   "pgdump-Werke"
+      Caption         =   "ffu"
       Height          =   255
       Left            =   1200
       TabIndex        =   13
@@ -393,17 +393,6 @@ End Sub
 
 Private Sub Command10_Click()
 Load alarmlist
-
-End Sub
-
-Private Sub Command11_Click()
-
-
-If exist("vdkw.dump") Then Kill "vdkw.dump"
-
-Call form1.pg_xp("k_loc", "vdkw.dump")
-Call form1.pg_xp("w_loc", "vdkw.dump")
-Call form1.pg_xp("sbz_loc", "vdkw.dump")
 
 End Sub
 
