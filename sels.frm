@@ -15,14 +15,14 @@ Begin VB.Form sels
       Caption         =   "Vertrags- nummernliste"
       Height          =   495
       Left            =   1080
-      TabIndex        =   12
+      TabIndex        =   11
       Top             =   3600
       Width           =   1335
    End
    Begin MSComctlLib.ListView gd1 
       Height          =   3375
       Left            =   120
-      TabIndex        =   11
+      TabIndex        =   10
       Top             =   120
       Width           =   9135
       _ExtentX        =   16113
@@ -145,15 +145,6 @@ Begin VB.Form sels
       _ExtentX        =   820
       _ExtentY        =   820
    End
-   Begin VB.Label Label2 
-      Alignment       =   1  'Rechts
-      BackStyle       =   0  'Transparent
-      Height          =   255
-      Left            =   5400
-      TabIndex        =   10
-      Top             =   2520
-      Width           =   2535
-   End
    Begin VB.Label Label1 
       BackStyle       =   0  'Transparent
       Caption         =   "speichern als"
@@ -170,6 +161,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim calc$(0 To 9), compiledcalc$(0 To 9), calcptr%
 
 Sub rlist1()
 Dim tr As String
@@ -247,7 +239,7 @@ gd1.Visible = True
 gd1.View = lvwReport
 MousePointer = 11: DoEvents
 Y% = 0
-For i% = 0 To r.Fields.Count - 1
+For i% = 0 To r.Fields.count - 1
   'Print #o%, """"; r.Fields(i%).Name; """;";
   Set colHeader = gd1.ColumnHeaders.add(, , r.Fields(i%).name, 800)
   cnvlist(i%) = "": If form1.getusersetting("selcnv" + trm(r.Fields(i%).name), "") = "Datum" Then cnvlist(i%) = "Datum"
@@ -255,7 +247,7 @@ For i% = 0 To r.Fields.Count - 1
 Next i%
 While Not r.EOF
   Set lvitem = gd1.ListItems.add(, , trm(r.Fields(0).value))
-  For i% = 1 To r.Fields.Count - 1
+  For i% = 1 To r.Fields.count - 1
     fwert = trm(r.Fields(i%).value)
     If cnvlist(i%) = "Datum" Then
       fwert = datfromsql(fwert)
@@ -271,7 +263,7 @@ While Not r.EOF
 Wend
 For i% = 0 To Y% - 1
   Set lvitem = gd1.ListItems(i% + 1)
-  For sp% = 0 To r.Fields.Count - 1
+  For sp% = 0 To r.Fields.count - 1
     If sp% = 0 Then
       zellwert = lvitem.text
     Else
@@ -383,8 +375,8 @@ End If
 End Sub
 
 Private Sub Command3_Click()
-Dim c$, r As ADODB.Recordset, i%, o%, X, fn$, rrr, xld$, zelle$, res$, zz$
-Dim cnvlist$(19)
+Dim c$, r As ADODB.Recordset, i%, j%, k%, o%, X, fn$, rrr, xld$, zelle$, res$, zz$
+Dim cnvlist$(19), xlname(99), count%, trenn$, rfcount%, term$, compiled$
 
 c$ = Text1.text
 If LCase(word1(c$)) <> "select" Then
@@ -408,14 +400,26 @@ If rrr <> 0 Then
   Exit Sub
 End If
 MousePointer = 11: DoEvents
-For i% = 0 To r.Fields.Count - 1
+rfcount% = r.Fields.count
+For i% = 0 To r.Fields.count - 1
   Print #o%, """"; r.Fields(i%).name; """" + xld$;
+  xlname(i%) = r.Fields(i%).name
   cnvlist(i%) = "": If form1.getusersetting("selcnv" + trm(r.Fields(i%).name), "") = "Datum" Then cnvlist(i%) = "Datum"
   If form1.getusersetting("selcnv" + trm(r.Fields(i%).name), "") = "Uhrzeit" Then cnvlist(i%) = "Uhrzeit"
 Next i%
+For i% = 0 To calcptr% - 1
+  If calc$(i%) <> "" Then
+    j% = InStr(calc$(i%), "=")
+    If j% > 1 Then
+      Print #o%, """"; Left(calc$(i%), j% - 1); """" + xld$;
+    End If
+  End If
+Next i%
 Print #o%,
+count% = 1
 While Not r.EOF
-  For i% = 0 To r.Fields.Count - 1
+  count% = count% + 1
+  For i% = 0 To r.Fields.count - 1
     zelle$ = trm(r.Fields(i%).value)
     If InStr(zelle$, "select ") > 0 Then
       res$ = ""
@@ -441,6 +445,27 @@ While Not r.EOF
       zelle$ = zelle$ + ":00"
     End If
     Print #o%, """"; zelle$; """" + xld$;
+  Next i%
+  For i% = 0 To calcptr% - 1
+    zelle$ = ""
+    If calc$(i%) <> "" Then
+      j% = InStr(calc$(i%), "=")
+      If j% > 0 Then
+        zz$ = Mid$(calc$(i%), j% + 1)
+        While trm(zz$) <> ""
+          term$ = term1(zz$, "+*-/"): compiled$ = term$
+          For k% = 0 To rfcount% - 1
+             If xlname(k%) = term$ Then
+              compiled$ = Chr$(65 + k%)
+              Exit For
+             End If
+           Next k%
+          zelle$ = zelle$ + compiled$ + trm(count%) + Mid$(zz$, Len(term$) + 1, 1)
+          zz$ = Mid$(zz$, Len(term$) + 2)
+        Wend
+        Print #o%, """="; zelle$; """" + xld$;
+      End If
+    End If
   Next i%
   Print #o%,
   r.MoveNext
@@ -598,6 +623,8 @@ Private Sub List1_Click()
 Dim i%, o%, fn$, c$, r As ADODB.Recordset, M$, rrr
 
 Text1.text = ""
+calcptr% = 0
+For i% = 0 To 9: calc$(calcptr%) = "": Next i%
 i% = List1.ListIndex
 If i% < 0 Then Exit Sub
 Label1.Caption = ""
@@ -610,25 +637,17 @@ o% = FreeFile
 Open fn$ For Input As #o%
 While Not EOF(o%)
   Line Input #o%, fn$
-  If Text1.text <> "" Then Text1.text = Text1.text & vbCrLf
-  Text1.text = Text1.text & fn$
+  If Left$(fn$, 5) = "CALC:" And calcptr% < 10 Then
+    calc$(calcptr%) = Mid$(fn$, 6)
+    calcptr% = calcptr% + 1
+  Else
+    If Text1.text <> "" Then Text1.text = Text1.text & vbCrLf
+    Text1.text = Text1.text & fn$
+  End If
 Wend
 Close #o%
 
 c$ = Text1.text
-If LCase(word1(c$)) = "select" Then
-  c$ = Mid$(c$, InStr(LCase(c$), "from "))
-  c$ = "select count(*) as cnt " & c$
-  Set r = New ADODB.Recordset
-  r.CursorLocation = adUseServer
-  rrr = form1.adoopen(r, c$, form1.adoc, dbOpenDynaset, dbReadOnly)
-  If rrr = 0 Then
-    M$ = r!cnt & " Sätze"
-  Else
-    M$ = "Anzahl nicht feststellbar"
-  End If
-  Label2.Caption = M$
-End If
 BackColor = form1.cleancolor()
 Command4.Enabled = False
 End Sub
@@ -717,7 +736,7 @@ For i = 1 To n
     End If
     While Not r.EOF
       Print #o%, "<font size=""1"">"
-      For k = 0 To r.Fields.Count - 1
+      For k = 0 To r.Fields.count - 1
         Print #o%, form1.repl1310htm(trm(r.Fields(k).value) + "&nbsp;")
       Next k
       Print #o%, "</font>"

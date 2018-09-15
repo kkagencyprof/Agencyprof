@@ -486,6 +486,10 @@ Dim r As ADODB.Recordset, l$, neuid As String, altid As String, n$
   i% = topics.ListIndex
   If i% < 0 Then Exit Sub
   c$ = topics.List(i%)
+  If c$ = "" Then
+    If btnPrj.Caption = "dead link" Then MsgBox "This is not yet the impossible state, but I will not proceed." + vbCrLf + "Please contact support if you can reproduce this message."
+    Exit Sub
+  End If
 
   If btnPrj.Caption = "rename topic" Then
     altid = c$
@@ -540,6 +544,11 @@ Dim r As ADODB.Recordset, l$, neuid As String, altid As String, n$
       l$ = "delete from opt_topics where topicid='" & c$ & "'"
       Call form1.sqlqry(l$)
       l$ = "delete from sysvars where owner like 'sysvar_system_tlnk_" + c$ + "_%'"
+      If l$ = "delete from sysvars where owner like 'sysvar_system_tlnk__%'" Or l$ = "delete from sysvars where owner like 'sysvar_system_tlnk_%'" Then
+        If form1.getusersetting("extralogtlnk", "no") = "ja" Then Call form1.log2f("IMPOSSIBLE STATE:" + l$, "dochist2", "btnPrj_Click")
+        MsgBox "THE IMPOSSIBLE STATE HAS BEEN REACHED, but I will not proceed." + vbCrLf + "Please contact support."
+        Exit Sub
+      End If
       Call form1.sqlqry(l$)
       If form1.getusersetting("extralogtlnk", "no") = "ja" Then Call form1.log2f(l$, "dochist2", "btnPrj_Click")
       Call rtopics
@@ -716,14 +725,14 @@ Private Sub Command4_Click()
 Dim i As Integer, lvitem
 
 'd2infile = "dochist2": d2insub = "Command4_Click"
-For i = 1 To gd1.ListItems.Count
+For i = 1 To gd1.ListItems.count
   gd1.ListItems(i).Selected = False
 Next i
 On Error Resume Next
 Call gd1.SetFocus
 On Error GoTo 0
 DoEvents
-For i = 1 To gd1.ListItems.Count
+For i = 1 To gd1.ListItems.count
   Set lvitem = gd1.ListItems(i)
   If lvitem.SubItems(5) = "no access" Then
     gd1.ListItems(i).Selected = True
@@ -855,7 +864,7 @@ For j% = 0 To tptr% - 1
 Next j%
 Print #o%,
 
-For i = 1 To gd1.ListItems.Count
+For i = 1 To gd1.ListItems.count
   aid = gd1.ListItems(i).SubItems(5)
   For j% = 0 To tptr% - 1: xport(j%) = "": Next j%
   c$ = "select datum,ort from auftritt where id='" + aid + "'"
@@ -1360,7 +1369,7 @@ Dim r As ADODB.Recordset
 
 Dim d2infile As String, d2insub As String
 d2infile = "dochist2": d2insub = "gd1_Click"
-If gd1.ListItems.Count <= 0 Then Exit Sub
+If gd1.ListItems.count <= 0 Then Exit Sub
 id$ = gd1.SelectedItem
 p% = InStr(id$, "(ID:"): If p% = 0 Then Exit Sub
 id$ = Mid$(id$, p% + 4)
@@ -1415,7 +1424,7 @@ If runmode = "repert" Then
   Call shwAdrDetail.SetFocus
   Exit Sub
 End If
-If gd1.ListItems.Count <= 0 Then Exit Sub
+If gd1.ListItems.count <= 0 Then Exit Sub
 id$ = gd1.SelectedItem
 p% = InStr(id$, "(ID:"): If p% = 0 Then Exit Sub
 MousePointer = 11: DoEvents
@@ -1520,7 +1529,7 @@ If KeyCode = 8 Or KeyCode = 46 Then
   If ask% = vbYes Then
     ask% = MsgBox(transe("Auch die Dokumente löschen?"), vbYesNo + vbCritical + vbDefaultButton2, transe("Dokumente löschen?"))
     dochist2.MousePointer = 11: DoEvents
-    For i = gd1.ListItems.Count To 1 Step -1
+    For i = gd1.ListItems.count To 1 Step -1
       If (gd1.ListItems(i).Selected = True) Then
         id$ = gd1.ListItems(i)
         If gd1.ListItems(i).SubItems(3) <> transe("Rechnungsnummer") And gd1.ListItems(i).SubItems(3) <> transe("Datenänderung") And InStr(gd1.ListItems(i).SubItems(3), transe("Vertragsnummer")) <> 1 Then
@@ -1566,7 +1575,7 @@ rrr = form1.adoopen(r, sq$, form1.adoc, adOpenDynamic, adLockReadOnly, d2infile,
   End If
 End If
 If KeyCode = 67 Then
-  For i = gd1.ListItems.Count To 1 Step -1
+  For i = gd1.ListItems.count To 1 Step -1
     If gd1.ListItems(i).SubItems(5) = "no access" Then
       gd1.ListItems(i).Selected = True
     Else
@@ -1816,7 +1825,7 @@ Dim r As ADODB.Recordset, cl$, cmd$
 
 Dim d2infile As String, d2insub As String
 d2infile = "dochist2": d2insub = "wvl_Click"
-If gd1.ListItems.Count <= 0 Then Exit Sub
+If gd1.ListItems.count <= 0 Then Exit Sub
 id$ = gd1.SelectedItem
 p% = InStr(id$, "(ID:"): If p% = 0 Then Exit Sub
 id$ = Mid$(id$, p% + 4)

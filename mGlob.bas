@@ -820,6 +820,23 @@ If i% > 0 Then
 End If
 word2bis = l$
 End Function
+Public Function term1(l1$, terminal$) As String
+Dim l$, pos%, i%, j%, s$
+
+l$ = l1$: pos% = 999
+For i% = 1 To Len(terminal$)
+  s$ = Mid$(terminal$, i%, 1)
+  j% = InStr(l$, s$)
+  If j% > 0 Then
+    If j% < pos% Then pos% = j%
+  End If
+Next i%
+If pos% < 999 Then
+  term1 = Left$(l$, pos% - 1)
+Else
+  term1 = l$
+End If
+End Function
 Public Function isnumber(l1$) As Boolean
 Dim i%, l$, z$
 
