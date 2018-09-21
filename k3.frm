@@ -870,7 +870,7 @@ If Button = 2 Then
     If form1.weckerpresent Then
       o% = FreeFile
       On Error Resume Next
-      Open form1.s0dir() + "\wecker.ini" For Output As #o%
+      Open form1.s00dir() + "\wecker.ini" For Output As #o%
       rrr = Err
       On Error GoTo 0
       If rrr = 0 Then
@@ -965,7 +965,7 @@ Else
       If rrr = 0 Then
         If Not r.EOF Then
           tt$ = "": wd = 0
-          For i% = 1 To r.Fields.Count - 1
+          For i% = 1 To r.Fields.count - 1
             On Error Resume Next
             ta$ = trm(r.Fields(i%).value)
             tb$ = trm(r.Fields(i%).name)
@@ -1370,10 +1370,10 @@ Dim d As Variant, id$
 End Sub
 
 Private Sub tmrstrt_Click()
-Dim X
+Dim X, o%
 
 If form1.weckerpresent Then
-  X = Shell(form1.s0dir() + "\wecker.exe", vbNormalFocus)
+  X = Shell(form1.s00dir() + "\wecker.exe", vbNormalFocus)
 Else
   tmrstrt.Enabled = False
 End If

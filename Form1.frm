@@ -3148,7 +3148,7 @@ End If
 localdir = s0d$
 If nexist("startlog.yes") Then starting = False
 weckerpresent = False
-If Not nexist(s0d$ + "\wecker.exe") Then weckerpresent = True
+If Not nexist(s00d$ + "\wecker.exe") Then weckerpresent = True
 usrprofile$ = ""
 lnkcolor = &H8000000D
 'lnkcolor = RGB(255, 0, 0)
@@ -7470,7 +7470,7 @@ englangwochentag$ = dictionarylookup(langwochentag$)
 Do
   bkmlist$(bkms%, bkmlcount%(bkms%)) = sqla.TableDefs("auftritt").Fields(bkmlcount%(bkms%)).name
   bkmlcount%(bkms%) = bkmlcount%(bkms%) + 1
-Loop Until bkmlcount%(bkms%) >= sqla.TableDefs("auftritt").Fields.Count
+Loop Until bkmlcount%(bkms%) >= sqla.TableDefs("auftritt").Fields.count
 bkmlist$(bkms%, bkmlcount%(bkms%)) = "saison": bkmlcount%(bkms%) = bkmlcount%(bkms%) + 1
 bkmlist$(bkms%, bkmlcount%(bkms%)) = "terminende": bkmlcount%(bkms%) = bkmlcount%(bkms%) + 1
 bkmlist$(bkms%, bkmlcount%(bkms%)) = "wochentag": bkmlcount%(bkms%) = bkmlcount%(bkms%) + 1
@@ -9013,7 +9013,7 @@ rrr = form1.adoopen(rv, cmd$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2i
                         End If
                       End If
                       dochistlist.AddItem cmx$
-                      For fc% = 1 To rv.Fields.Count - 1
+                      For fc% = 1 To rv.Fields.count - 1
 'tel und fax nicht mehr automatsch ausschreiben
 '                        Select Case LCase(rv.Fields(fc%).Name)
 '                          Case "tel": Print #p%, UcaseFirstLetter(rv.Fields(fc%).Name); ": ";
@@ -9072,7 +9072,7 @@ rrr = form1.adoopen(rv, cmd$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2i
                             End If
                           End If
                           Call adpprint(adruckmerkslot, p%, repl1310rtf(rvf$)): Call dbgu(rvf$)
-                          If fc% < rv.Fields.Count - 1 Then
+                          If fc% < rv.Fields.count - 1 Then
                             If Not IsNull(rv.Fields(fc% + 1).value) Then
                               Print #p%, " - ";
                             End If
@@ -10722,7 +10722,7 @@ Open txt$ For Append As #o%
 Print #o%,
 Print #o%, "drop table " + t$ + ";"
 Print #o%, "create table " + t$ + "("
-For i% = 0 To sqla.TableDefs(t$).Fields.Count - 1
+For i% = 0 To sqla.TableDefs(t$).Fields.count - 1
   Select Case sqla.TableDefs(t$).Fields(i%).Type
     Case 10: Print #o%, sqla.TableDefs(t$).Fields(i%).name; " char(" & trm(sqla.TableDefs(t$).Fields(i%).Size) & ")";
     Case 8: Print #o%, sqla.TableDefs(t$).Fields(i%).name; " char(20)";
@@ -10730,7 +10730,7 @@ For i% = 0 To sqla.TableDefs(t$).Fields.Count - 1
     Case 4: Print #o%, sqla.TableDefs(t$).Fields(i%).name; " int4";
     Case Else:
   End Select
-  If i% < sqla.TableDefs(t$).Fields.Count - 1 Then Print #o%, ","
+  If i% < sqla.TableDefs(t$).Fields.count - 1 Then Print #o%, ","
 Next i%
 Print #o%,
 Print #o%, ");"
@@ -10740,12 +10740,12 @@ rtmp.CursorLocation = adUseServer
 rrr = form1.adoopen(rtmp, "SELECT * FROM " + t$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2insub)
 While Not rtmp.EOF
   Print #o%, "insert into " + t$ + " values(";
-  For i% = 0 To sqla.TableDefs(t$).Fields.Count - 1
+  For i% = 0 To sqla.TableDefs(t$).Fields.count - 1
   Select Case sqla.TableDefs(t$).Fields(i%).Type
     Case 4: Print #o%, rtmp.Fields(i%).value;
     Case Else: Print #o%, "'"; rtmp.Fields(i%).value; "'";
   End Select
-  If i% <> sqla.TableDefs(t$).Fields.Count - 1 Then Print #o, ",";
+  If i% <> sqla.TableDefs(t$).Fields.count - 1 Then Print #o, ",";
   Next i%
   Print #o%, ");"
   rtmp.MoveNext
@@ -10973,7 +10973,7 @@ rrr = form1.adoopen(stmp, "select * from auftritthigru where auftrittsid='" & au
       atyp$ = stmp!auftrittstyp
       If LCase(atyp$) = "künstlerauftritt" Or LCase(atyp$) = "promo" Or LCase(atyp$) = "orchesterauftritt" Or LCase(atyp$) = "dirigentenauftritt" Then
         hsum = 0
-        For j% = 1 To sqla.TableDefs("usr_" & utabn(atyp$)).Fields.Count - 1
+        For j% = 1 To sqla.TableDefs("usr_" & utabn(atyp$)).Fields.count - 1
           fnam$ = LCase$(sqla.TableDefs("usr_" & utabn(atyp$)).Fields(j%).name)
           If InStr(LCase(fnam$), "honorar") = 1 Then
             cmd$ = "select * from usr_" & utabn(atyp$) & " where id='" & aufid$ & "'"
@@ -11054,7 +11054,7 @@ rrr = form1.adoopen(stmp, "select * from auftritthigru where auftrittsid='" & au
           End If
         End If
       End If
-      For j% = 1 To sqla.TableDefs("usr_" & utabn(atyp$)).Fields.Count - 1
+      For j% = 1 To sqla.TableDefs("usr_" & utabn(atyp$)).Fields.count - 1
         fnam$ = LCase$(sqla.TableDefs("usr_" & utabn(atyp$)).Fields(j%).name)
         If LCase(fnam$) = honfn$ Then
           honi% = j%
@@ -11121,7 +11121,7 @@ rrr = form1.adoopen(stmp, "select * from auftritthigru where auftrittsid='" & au
           honfn = "honorar"
         End If
       End If
-      For j% = 1 To sqla.TableDefs("usr_" & utabn(atyp$)).Fields.Count - 1
+      For j% = 1 To sqla.TableDefs("usr_" & utabn(atyp$)).Fields.count - 1
         fnam$ = LCase$(sqla.TableDefs("usr_" & utabn(atyp$)).Fields(j%).name)
         If LCase(fnam$) = honfn$ Then
           honi% = j%
@@ -11399,7 +11399,7 @@ rrr = form1.adoopen(r, c$, adoc, adOpenDynamic, adLockReadOnly)
 o% = FreeFile
 Open "xp_" & strTxtFile For Output As #o%
 While Not r.EOF
-  For i% = 0 To r.Fields.Count - 1
+  For i% = 0 To r.Fields.count - 1
     Print #o%, trm("'" & r.Fields(i%).value); "',";
   Next i%
   Print #o%,
@@ -11522,7 +11522,7 @@ Set r = New ADODB.Recordset
 r.CursorLocation = adUseServer
 rrr = form1.adoopen(r, "SELECT * FROM b_loc where id='" & id & "'", adoc, adOpenDynamic, adLockReadOnly, d2infile, d2insub)
 If Not r.EOF Then
-  For p% = 2 To r.Fields.Count - 2
+  For p% = 2 To r.Fields.count - 2
     If rc <> "" Then rc = rc & "/"
     rc = rc & trm(r.Fields(p%).value)
     If InStr(trm(r.Fields(p%).name), "sonst") > 0 Then
@@ -11710,8 +11710,8 @@ Set s = OpenDatabase(fn$, True, False)
 rrr = Err
 On Error GoTo 0
 If rrr <> 0 Then Exit Sub
-Debug.Print s.name; " mit"; s.TableDefs.Count - 1; " Tabellen"
-For i = 0 To s.TableDefs.Count - 1
+Debug.Print s.name; " mit"; s.TableDefs.count - 1; " Tabellen"
+For i = 0 To s.TableDefs.count - 1
   If Left$(s.TableDefs(i).name, 4) <> "MSys" Then
     On Error Resume Next
     Debug.Print s.TableDefs(i).name; " und "; sqla.TableDefs(s.TableDefs(i).name).name
@@ -11719,14 +11719,14 @@ For i = 0 To s.TableDefs.Count - 1
     On Error GoTo 0
     If rrr = 3265 Then
       Set t = sqla.CreateTableDef(s.TableDefs(i).name)
-      For j = 0 To s.TableDefs(i).Fields.Count - 1
+      For j = 0 To s.TableDefs(i).Fields.count - 1
         Set f = t.CreateField(s.TableDefs(i).Fields(j).name, s.TableDefs(i).Fields(j).Type)
         f.Size = s.TableDefs(i).Fields(j).Size:
         t.Fields.Append f
       Next j
       sqla.TableDefs.Append t
     Else
-      For j = 0 To s.TableDefs(i).Fields.Count - 1
+      For j = 0 To s.TableDefs(i).Fields.count - 1
         If wert = 1 Then
           If j = 0 Then
             idx.name = "PrimaryKey"
@@ -11920,7 +11920,7 @@ rrr = form1.adoopen(r, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2insu
     Open fn$ For Output As #o%
     c$ = "insert into " & t$ & " (" & idn$ & ") values('" & r.Fields(0).value & "');"
     Print #o%, c$
-    For i% = 1 To r.Fields.Count - 1
+    For i% = 1 To r.Fields.count - 1
       If trm(r.Fields(i%).value) <> "" Then
         If hinweisexport Or (Not hinweisexport And InStr(LCase(r.Fields(i%).name), "hinweis") = 0) Then
           c$ = mkupdcmd(t$, idn$, id$, r.Fields(i%).name, r.Fields(i%).Type, r.Fields(i%).value) & ";"
@@ -11936,7 +11936,7 @@ rrr = form1.adoopen(r1, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2ins
       While Not r1.EOF
         c$ = "insert into hbplist (id) values('" & r1!id & "');"
         Print #o%, c$
-        For i% = 1 To r1.Fields.Count - 1
+        For i% = 1 To r1.Fields.count - 1
           If trm(r1.Fields(i%).value) <> "" Then
             c$ = mkupdcmd("hbplist", "id", r1!id, r1.Fields(i%).name, r1.Fields(i%).Type, r1.Fields(i%).value) & ";"
             Print #o%, c$
@@ -11955,7 +11955,7 @@ rrr = form1.adoopen(r1, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2ins
         Print #o%, c$
         c$ = "insert into adresstyp (id,kid) values('" & r1!id & "','-1');"
         Print #o%, c$
-        For i% = 1 To r1.Fields.Count - 1
+        For i% = 1 To r1.Fields.count - 1
           If trm(r1.Fields(i%).value) <> "" _
              And LCase(r1.Fields(i%).name) <> "kid" Then
             c$ = mkupdcmd("adresstyp", "id", r1!id, r1.Fields(i%).name, r1.Fields(i%).Type, r1.Fields(i%).value) & ";"
@@ -11969,7 +11969,7 @@ rrr = form1.adoopen(rhig, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2i
         While Not rhig.EOF
           c$ = "insert into auftritthigru (id) values('" & rhig!id & "');"
           Print #o%, c$
-          For j% = 1 To rhig.Fields.Count - 1
+          For j% = 1 To rhig.Fields.count - 1
             If trm(rhig.Fields(j%).value) <> "" Then
               c$ = mkupdcmd("auftritthigru", "id", rhig!id, rhig.Fields(j%).name, rhig.Fields(j%).Type, rhig.Fields(j%).value) & ";"
               Print #o%, c$
@@ -11987,7 +11987,7 @@ rrr = form1.adoopen(r1, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2ins
         While Not r1.EOF
           c$ = "insert into auftritthigru (id) values('" & r1!id & "');"
           Print #o%, c$
-          For i% = 1 To r1.Fields.Count - 1
+          For i% = 1 To r1.Fields.count - 1
             If trm(r1.Fields(i%).value) <> "" Then
               c$ = mkupdcmd("auftritthigru", "id", r1!id, r1.Fields(i%).name, r1.Fields(i%).Type, r1.Fields(i%).value) & ";"
               Print #o%, c$
@@ -12004,7 +12004,7 @@ rrr = form1.adoopen(r2, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2ins
         While Not r2.EOF
           c$ = "insert into kontakt (id) values('" & r2!id & "');"
           Print #o%, c$
-          For i% = 1 To r2.Fields.Count - 1
+          For i% = 1 To r2.Fields.count - 1
             If trm(r2.Fields(i%).value) <> "" Then
               c$ = mkupdcmd("kontakt", "id", r2!id, r2.Fields(i%).name, r2.Fields(i%).Type, r2.Fields(i%).value) & ";"
               Print #o%, c$
@@ -12017,7 +12017,7 @@ rrr = form1.adoopen(r1, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2ins
           While Not r1.EOF
             c$ = "insert into adresstyp (id) values('" & r1!id & "');"
             Print #o%, c$
-            For i% = 1 To r1.Fields.Count - 1
+            For i% = 1 To r1.Fields.count - 1
               If trm(r1.Fields(i%).value) <> "" Then
                 c$ = mkupdcmd("adresstyp", "id", r1!id, r1.Fields(i%).name, r1.Fields(i%).Type, r1.Fields(i%).value) & ";"
                 Print #o%, c$
@@ -12032,7 +12032,7 @@ rrr = form1.adoopen(r1, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2ins
           While Not r1.EOF
             c$ = "insert into auftritthigru (id) values('" & r1!id & "');"
             Print #o%, c$
-            For i% = 1 To r1.Fields.Count - 1
+            For i% = 1 To r1.Fields.count - 1
               If trm(r1.Fields(i%).value) <> "" Then
                 c$ = mkupdcmd("auftritthigru", "id", r1!id, r1.Fields(i%).name, r1.Fields(i%).Type, r1.Fields(i%).value) & ";"
                 Print #o%, c$
@@ -12900,7 +12900,7 @@ rrr = form1.adoopen(stmp, "select * from auftritthigru where auftrittsid='" & au
       Else
         honfn = ""
       End If
-      For j% = 1 To sqla.TableDefs("usr_" & utabn(atyp$)).Fields.Count - 1
+      For j% = 1 To sqla.TableDefs("usr_" & utabn(atyp$)).Fields.count - 1
         fnam$ = LCase$(sqla.TableDefs("usr_" & utabn(atyp$)).Fields(j%).name)
         If LCase(fnam$) = "honorar" & honfn$ Then
           honi% = j%
@@ -12963,7 +12963,7 @@ Dim i%, fna$
 
 'd2infile = "Form1": d2insub = "ratefeldaustabelle"
 ratefeldaustabelle = feldname
-For i% = 1 To sqla.TableDefs(tabelle).Fields.Count - 1
+For i% = 1 To sqla.TableDefs(tabelle).Fields.count - 1
   fna$ = LCase(sqla.TableDefs(tabelle).Fields(i%).name)
   If InStr(fna$, feldname) = 1 Then
     ratefeldaustabelle = fna$
@@ -13414,7 +13414,7 @@ rrr = form1.adoopen(r, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2insu
   If Not r.EOF Then
     c$ = "insert into " & t$ & " (" & idn$ & ") values('" & neuid$ & "');"
     Call form1.sqlqry(c$)
-    For i% = 1 To r.Fields.Count - 1
+    For i% = 1 To r.Fields.count - 1
       If trm(r.Fields(i%).value) <> "" Then
         c$ = mkupdcmd(t$, idn$, neuid$, r.Fields(i%).name, r.Fields(i%).Type, r.Fields(i%).value) & ";"
         Call form1.sqlqry(c$)
@@ -13429,7 +13429,7 @@ rrr = form1.adoopen(r1, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2ins
         neuaid$ = form1.newid("adresstyp", "id", 18)
         c$ = "insert into adresstyp (id,kid) values('" & neuaid$ & "','-1');"
         Call form1.sqlqry(c$)
-        For i% = 1 To r1.Fields.Count - 1
+        For i% = 1 To r1.Fields.count - 1
           If trm(r1.Fields(i%).value) <> "" _
              And LCase(r1.Fields(i%).name) <> "kid" Then
             wert$ = trm(r1.Fields(i%).value)
@@ -13448,7 +13448,7 @@ rrr = form1.adoopen(r1, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2ins
         neuaid$ = form1.newid("auftritthigru", "id", 36)
         c$ = "insert into auftritthigru (id) values('" & neuaid$ & "');"
         Call form1.sqlqry(c$)
-        For i% = 1 To r1.Fields.Count - 1
+        For i% = 1 To r1.Fields.count - 1
           If trm(r1.Fields(i%).value) <> "" Then
             wert$ = trm(r1.Fields(i%).value)
             If r1.Fields(i%).name = "auftrittsid" Then wert$ = neuid$
@@ -13466,7 +13466,7 @@ rrr = form1.adoopen(r1, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2ins
         neuanid$ = form1.newid("anreden", "id", 16)
         c$ = "insert into anreden (id) values('" & neuanid$ & "');"
         Call form1.sqlqry(c$)
-        For i% = 1 To r1.Fields.Count - 1
+        For i% = 1 To r1.Fields.count - 1
           If trm(r1.Fields(i%).value) <> "" Then
             wert$ = trm(r1.Fields(i%).value)
             If r1.Fields(i%).name = "kid" Then wert$ = "-1." & neuid$
@@ -13484,7 +13484,7 @@ rrr = form1.adoopen(r2, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2ins
         nkid$ = form1.newid("kontakt", "id", 18)
         c$ = "insert into kontakt (id) values('" & nkid$ & "');"
         Call form1.sqlqry(c$)
-        For i% = 1 To r2.Fields.Count - 1
+        For i% = 1 To r2.Fields.count - 1
           If trm(r2.Fields(i%).value) <> "" Then
             wert$ = trm(r2.Fields(i%).value)
             If r2.Fields(i%).name = "vid" Then wert$ = neuid$
@@ -13500,7 +13500,7 @@ rrr = form1.adoopen(r3, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2ins
           neuanid$ = form1.newid("anreden", "id", 16)
           c$ = "insert into anreden (id) values('" & neuanid$ & "');"
           Call form1.sqlqry(c$)
-          For i% = 1 To r3.Fields.Count - 1
+          For i% = 1 To r3.Fields.count - 1
             If trm(r3.Fields(i%).value) <> "" Then
               wert$ = trm(r3.Fields(i%).value)
               If r3.Fields(i%).name = "kid" Then wert$ = nkid$
@@ -13518,7 +13518,7 @@ rrr = form1.adoopen(r1, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2ins
           ntid$ = form1.newid("adresstyp", "id", 18)
           c$ = "insert into adresstyp (id) values('" & ntid$ & "');"
           Call form1.sqlqry(c$)
-          For i% = 1 To r1.Fields.Count - 1
+          For i% = 1 To r1.Fields.count - 1
             If trm(r1.Fields(i%).value) <> "" Then
               wert$ = trm(r1.Fields(i%).value)
               If r1.Fields(i%).name = "vid" Then wert$ = neuid$
@@ -13537,7 +13537,7 @@ rrr = form1.adoopen(r1, c$, adoc, adOpenDynamic, adLockReadOnly, d2infile, d2ins
           ntid$ = form1.newid("auftritthigru", "id", 36)
           c$ = "insert into auftritthigru (id) values('" & ntid$ & "');"
           Call form1.sqlqry(c$)
-          For i% = 1 To r1.Fields.Count - 1
+          For i% = 1 To r1.Fields.count - 1
             If trm(r1.Fields(i%).value) <> "" Then
               wert$ = trm(r1.Fields(i%).value)
               If r1.Fields(i%).name = "auftrittsid" Then wert$ = neuid$ & nkid$
@@ -15668,7 +15668,7 @@ aalistlimited = ""
               wht$ = cut_d2bis(cut_d1(t1$, ")"), "(")
               t1$ = cut_d2bis(t1$, ")")
             End If
-            For j = 0 To fa.Fields.Count - 1
+            For j = 0 To fa.Fields.count - 1
               If LCase(t1$) = LCase(fa.Fields(j).name) Then
                 t2$ = trm(fa.Fields(j).value)
                 Exit For
@@ -15738,7 +15738,7 @@ aalistlimited = ""
         t1$ = cut_d1(aelist, "|"): aelist = cut_d2bis(aelist, "|")
         If t1$ <> "" Then
           If favalid Then
-            For j = 0 To fa.Fields.Count - 1
+            For j = 0 To fa.Fields.count - 1
               If LCase(t1$) = LCase(fa.Fields(j).name) Then
                 t2$ = trm(fa.Fields(j).value)
                 Exit For
