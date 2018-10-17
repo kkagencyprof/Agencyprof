@@ -1898,7 +1898,7 @@ End Sub
 Sub hgradrsuch(s$)
 Dim rtmp As ADODB.Recordset, r As ADODB.Recordset, rrr, cmd$, i9%, na$, l$
 Dim nsuch As String, addit As Boolean, rcnt%, whkrit$, id$
-Dim w1 As String, rest As String, p1%, ktid As String
+Dim w1 As String, rest As String, P1%, ktid As String
 
 Dim d2infile As String, d2insub As String
 d2infile = "Form1": d2insub = "hgradrsuch"
@@ -1954,7 +1954,7 @@ End Sub
 Sub rlist1(s$)
 Dim rtmp As ADODB.Recordset, rrr, cmd$, i9%, na$, l$
 Dim nsuch As String, addit As Boolean, rcnt%, whkrit$, id$
-Dim w1 As String, rest As String, p1%, ktid As String, als$, ij%
+Dim w1 As String, rest As String, P1%, ktid As String, als$, ij%
 Dim s1$, ca$, cb$, z$, swrd$(6), i%
 Dim d2infile As String, d2insub As String
 d2infile = "Form1": d2insub = "rlist1"
@@ -2560,18 +2560,18 @@ Call handbuchcall("04-Hauptformular.htm")
 
 End Sub
 Public Sub handbuchcall(p$)
-Dim u$, p1$
+Dim u$, P1$
 Dim brw$, X
 
-p1$ = transe(trm(p$))
-If p1$ = "" Then p1$ = "index.html"
+P1$ = transe(trm(p$))
+If P1$ = "" Then P1$ = "index.html"
 Unload frmBrowser
 DoEvents
 u$ = form1.getusersetting("Handbuch", transe("http://www.agencyprof.de/tutorial"))
 If u$ = "" Then
-  u$ = "file:///" & form1.s0dir() & "/handbuch/" & p1$
+  u$ = "file:///" & form1.s0dir() & "/handbuch/" & P1$
 Else
-   u$ = u$ & "/" & p1$
+   u$ = u$ & "/" & P1$
 End If
 brw$ = form1.UseBrowser()
 If brw$ <> "" Then
@@ -14377,7 +14377,7 @@ If LCase(upop$) = "dir:inbox" Then
   r.CursorLocation = adUseServer
   rrr = form1.adoopen(r, c$, form1.adoc, adOpenDynamic, adLockReadOnly)
   If Not r.EOF Then
-    Print #o%, "popuser=" + trm(r!user)
+    Print #o%, "popuser=" + trm(r!User)
     Print #o%, "popserver=" + trm(r!server)
     Print #o%, "popport=" + trm(r!Port)
     Print #o%, "poppsswd=" + trm(r!psswd)
@@ -14400,7 +14400,7 @@ r.CursorLocation = adUseServer
 rrr = form1.adoopen(r, c$, form1.adoc, adOpenDynamic, adLockReadOnly)
 While Not r.EOF
   If r!id <> "PDFServer" Then
-    Print #o%, r!id; "|"; r!server; "|"; r!user; "|"; r!psswd; "|"; trm(r!Port)
+    Print #o%, r!id; "|"; r!server; "|"; r!User; "|"; r!psswd; "|"; trm(r!Port)
   End If
   r.MoveNext
 Wend
@@ -15620,6 +15620,7 @@ aalistlimited = ""
         t1$ = t2$: t2$ = ""
       End If
       If Not form1.isfieldmissing("auftrittsfelder", "opthordeshare") Then
+        aelist = aelist + "|" + t2$
         If ftst!opthordeshare = 1 Then
           sharethis$ = ""
           If Not form1.isfieldmissing("auftrittsfelder", "opthordesharewhat") Then
@@ -15629,7 +15630,7 @@ aalistlimited = ""
             End If
           End If
           aalistlimited = aalistlimited + "|" + t2$
-          aelist = aelist + "|" + t2$
+'          aelist = aelist + "|" + t2$
           aalist = aalist + "|" + sharethis$ + t2$
           If t2$ = "" Or t1$ = "Programm" Then
             c$ = LCase(t1$)
@@ -15758,7 +15759,7 @@ aalistlimited = ""
               t3$ = t2$
             End If
             c$ = "select FeldDaten as wert from auftritthigru where FeldName='cloud' and auftrittsid='" + t3$ + "' and auftrittstyp='webcal'"
-'            Debug.Print c$
+            Debug.Print c$
             usr$ = form1.get1erg(c$)
             If usr$ <> "" Then
               c$ = form1.cloudcreateevnt(id$, usr$)
