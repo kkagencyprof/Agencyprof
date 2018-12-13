@@ -4403,7 +4403,7 @@ rrr = form1.adoopen(stmp, "select * from auftritt where id='" & rtmp!id & "'", f
       End If
       If Combo1.text = "CSV-Export" Then
         Print #o%, """" + stmp!datum + """" + xld$ + """" + transe(stmp!auftrittstyp) + """" + xld$ + """" + trm(stmp!bezeichnung) + """" + xld$ + """" + trm(stmp!ort) + """";
-        For j% = 1 To rtmp.Fields.Count - 1
+        For j% = 1 To rtmp.Fields.count - 1
           If rtmp.Fields(j%).name <> "aid" Then
             Print #o%, xld$ + """" + trm(rtmp.Fields(j%).value) + """";
           End If
@@ -4985,6 +4985,7 @@ If idshow.Caption = "" And datf(1).text <> "" Then
     neuid = strrepl(trm(neuid), "/", "_")
     neuid = strrepl(neuid, "'", "´")
     neuid = strrepl(neuid, "&", "_")
+    neuid = strrepl(neuid, ":", "_")
     If neuid$ <> "" Then
       If InStr(neuid$, "(") > 0 Then
         MsgBox transe("Unerlaubtes Zeichen in der ID.")
@@ -5110,6 +5111,7 @@ Else
   neuid$ = strrepl(trm(neuid$), "/", "_")
   neuid$ = strrepl(neuid$, "'", "`")
   neuid = strrepl(neuid, "&", "_")
+  neuid = strrepl(neuid, ":", "_")
   If neuid$ <> "" Then
     If InStr(neuid$, "(") > 0 Then
       MsgBox transe("Unerlaubtes Zeichen in der ID.")
