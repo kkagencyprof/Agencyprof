@@ -67,6 +67,34 @@ Public Sub cmdDial_Click()
     Dim amt$, brw$, X, dp$
 
     url$ = form1.getusersetting("fb7050url", "")
+    
+    If url$ = "callto:" Then
+      o% = FreeFile
+      amt$ = form1.s0dir() + "\" + form1.docs() + "\" & form1.getuserid() & "\dialer.htm"
+      Open amt$ For Output As #o%
+      Print #o%, "<head>"
+      dp$ = form1.getusersetting("fb7050dialprefix", "")
+      Print #o%, "<meta http-equiv='refresh' content='0; URL=callto:" + dp$ + trm(nummer) + "'>"
+      Print #o%, "</head><body>"
+      Print #o%, "Dialing: <a href='callto:'" + dp$ + trm(nummer) + "'>" + dp$ + trm(nummer) + "</a><br>"
+      Print #o%, "</body>"
+      Close #o%
+      Call Command3_Click
+      Unload frmBrowser
+      DoEvents
+      brw$ = form1.UseBrowser()
+      If brw$ <> "" Then
+        X = Shell(brw$ & " file:///" + strrepl(amt$, "\", "/"), 1)
+      Else
+        frmBrowser.StartingAddress = "file:///" + strrepl(amt$, "\", "/")
+        Load frmBrowser
+        frmBrowser.locdialer = amt$
+        frmBrowser.cboAddress.Visible = False
+        frmBrowser.lblAddress.Visible = False
+      End If
+      DoEvents
+      Exit Sub
+    End If
     If url$ <> "" Then
       o% = FreeFile
       amt$ = form1.getusersetting("fb7050dialer", form1.s0dir() + "\" + form1.docs() + "\" & form1.getuserid() & "\dialer.htm")
