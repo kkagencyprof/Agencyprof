@@ -68,15 +68,15 @@ Public Sub cmdDial_Click()
 
     url$ = form1.getusersetting("fb7050url", "")
     
-    If url$ = "callto:" Then
+    If url$ = "callto:" Or url$ = "tsip:" Then
       o% = FreeFile
       amt$ = form1.s0dir() + "\" + form1.docs() + "\" & form1.getuserid() & "\dialer.htm"
       Open amt$ For Output As #o%
       Print #o%, "<head>"
       dp$ = form1.getusersetting("fb7050dialprefix", "")
-      Print #o%, "<meta http-equiv='refresh' content='0; URL=callto:" + dp$ + trm(nummer) + "'>"
+      Print #o%, "<meta http-equiv='refresh' content='0; URL=" + url$ + dp$ + trm(nummer) + "'>"
       Print #o%, "</head><body>"
-      Print #o%, "Dialing: <a href='callto:'" + dp$ + trm(nummer) + "'>" + dp$ + trm(nummer) + "</a><br>"
+      Print #o%, "Dialing: <a href='" + url$ + dp$ + trm(nummer) + "'>" + dp$ + trm(nummer) + "</a><br>"
       Print #o%, "</body>"
       Close #o%
       Call Command3_Click
