@@ -8806,6 +8806,7 @@ rrr = form1.adoopen(a, "SELECT * FROM usr_" & utabn(rtmp!auftrittstyp) & " where
                         provision = provision / 100
                         provisionaufbrutto_netto = var2dbl(CCur(word1("" & bruttohonorar))) * provision
                       Else
+                        If hK = 0 Then hK = 1
                         provisionaufbrutto_netto = provision / hK
                       End If
                       provisionaufbrutto_mwst = thismwst * provisionaufbrutto_netto / 10000
@@ -14377,7 +14378,7 @@ If LCase(upop$) = "dir:inbox" Then
   r.CursorLocation = adUseServer
   rrr = form1.adoopen(r, c$, form1.adoc, adOpenDynamic, adLockReadOnly)
   If Not r.EOF Then
-    Print #o%, "popuser=" + trm(r!user)
+    Print #o%, "popuser=" + trm(r!User)
     Print #o%, "popserver=" + trm(r!server)
     Print #o%, "popport=" + trm(r!Port)
     Print #o%, "poppsswd=" + trm(r!psswd)
@@ -14400,7 +14401,7 @@ r.CursorLocation = adUseServer
 rrr = form1.adoopen(r, c$, form1.adoc, adOpenDynamic, adLockReadOnly)
 While Not r.EOF
   If r!id <> "PDFServer" Then
-    Print #o%, r!id; "|"; r!server; "|"; r!user; "|"; r!psswd; "|"; trm(r!Port)
+    Print #o%, r!id; "|"; r!server; "|"; r!User; "|"; r!psswd; "|"; trm(r!Port)
   End If
   r.MoveNext
 Wend
@@ -16220,8 +16221,9 @@ Dim dh As ADODB.Recordset, rrr
 Dim frome$, c$
 
   frome$ = Address$
+  frome$ = strrepl(frome$, """", "")
   knownaddress = False
-  If InStr(frome$, "<") > 0 Then
+  If InStr(frome$, "<") > 0 And InStr(frome$, ">") > 0 Then
     frome$ = Mid$(frome$, InStr(frome$, "<") + 1)
     frome$ = Left$(frome$, InStr(frome$, ">") - 1)
   Else

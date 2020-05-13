@@ -514,7 +514,7 @@ Private Sub cmdDelete_Click()
         Exit Sub
       End If
     End If
-    For i = listMessages.ListItems.Count To 1 Step -1
+    For i = listMessages.ListItems.count To 1 Step -1
         If (listMessages.ListItems(i).Selected = True) Then
           On Error Resume Next
           Kill listMessages.ListItems(i).SubItems(LVCFILE)
@@ -578,7 +578,7 @@ d2infile = "Frmmain": d2insub = "Command11_Click"
 u$ = form1.getuserid()
 On Error GoTo exsux
 ad1 = False
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
   Set lvitem = listMessages.ListItems(i)
   If (listMessages.ListItems(i).Selected = True) Then
 'frm$ = domainofemail(emailonly(strrepl(listMessages.SelectedItem, """", "")))
@@ -643,7 +643,7 @@ Dim from$, frome$, c$, lvitem
 'd2infile = "Frmmain": d2insub = "Command2_Click"
 Call listMessages.SetFocus
 On Error GoTo erroutc2
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
   If listMessages.ListItems(i).Selected = False Then
     listMessages.ListItems(i).Selected = True
   Else
@@ -672,11 +672,11 @@ Dim d2infile As String, d2insub As String
 d2infile = "Frmmain": d2insub = "Command4_Click"
 MousePointer = 11
 Call listMessages.SetFocus
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
   listMessages.ListItems(i).Selected = False
 Next i
 DoEvents
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
   Set lvitem = listMessages.ListItems(i)
   from$ = listMessages.ListItems(i)
   lvitem.Selected = form1.knownaddress(from$)
@@ -698,11 +698,11 @@ On Error GoTo 0
 If rrr <> 0 Then Exit Sub
 
 Call listMessages.SetFocus
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
   listMessages.ListItems(i).Selected = False
 Next i
 DoEvents
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
   Set lvitem = listMessages.ListItems(i)
   If frm$ = listMessages.ListItems(i) Then listMessages.ListItems(i).Selected = True
   DoEvents
@@ -720,11 +720,11 @@ Dim d2infile As String, d2insub As String
 d2infile = "Frmmain": d2insub = "Command6_Click"
 MousePointer = 11
 Call listMessages.SetFocus
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
   listMessages.ListItems(i).Selected = False
 Next i
 DoEvents
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
 If Not listMessages.ListItems(i).Selected Then
   Set lvitem = listMessages.ListItems(i)
   from$ = emailonly(strrepl(listMessages.ListItems(i), """", ""))
@@ -770,7 +770,7 @@ rrr = form1.adoopen(dh, c$, form1.adoc, adOpenDynamic, adLockReadOnly, d2infile,
     End If
   End If
   If listMessages.ListItems(i).Selected = True Then
-    For j% = i + 1 To listMessages.ListItems.Count
+    For j% = i + 1 To listMessages.ListItems.count
       If InStr(listMessages.ListItems(j%), from$) > 0 And listMessages.ListItems(j%).Selected = False Then
         listMessages.ListItems(j%).Selected = True
       End If
@@ -822,7 +822,7 @@ Private Sub Command9_Click()
 Dim i As Integer, rd As Integer, l$, strMessage As String
 Dim b$, o%, eml$, knt$, rrr, sbj$
 
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
   If (listMessages.ListItems(i).Selected = True) Then
     Call form1.dbg2f("report as spam: " + listMessages.ListItems(i).SubItems(LVCFILE))
     
@@ -1024,7 +1024,7 @@ If rrr <> 0 Then Exit Sub
 
 p% = 0: n% = 0
 Command5.Enabled = False
-For i% = 1 To listMessages.ListItems.Count
+For i% = 1 To listMessages.ListItems.count
   If listMessages.ListItems(i%).Selected = True Then
     p% = p% + 1
     If p% > 1 Then Exit For
@@ -1042,7 +1042,7 @@ End If
 If Not mozopen Then
   currentmozfile = ""
   p% = InStr(frm$, "<")
-  If p% > 0 Then
+  If p% > 0 And InStr(frm$, ">") > 0 Then
     frm$ = Mid$(frm$, p% + 1)
     frm$ = Left$(frm$, InStr(frm$, ">") - 1)
   Else
@@ -1131,7 +1131,7 @@ Dim lvitem
 'd2infile = "Frmmain": d2insub = "listMessages_KeyDown"
 '<strg>a
 If KeyCode = 65 And pcode = 17 Then
-  For i = listMessages.ListItems.Count To 1 Step -1
+  For i = listMessages.ListItems.count To 1 Step -1
     listMessages.ListItems(i).Selected = True
   Next i
 End If
@@ -1407,7 +1407,7 @@ DoEvents
 If List1.ListCount = 0 Or List1.List(0) = transe("PIN fehlt") Then Call rlist1
 If autoblack.value = 1 Then Call Command6_Click
 If delptr > 0 Then
-  For i = 1 To listMessages.ListItems.Count
+  For i = 1 To listMessages.ListItems.count
     For o% = 0 To delptr - 1
       If Left(listMessages.ListItems(i).SubItems(LVCSUBJECT), Len(dellst(o%))) = dellst(o%) Then
         listMessages.ListItems(i).Selected = True
@@ -1467,7 +1467,7 @@ Sub cmdViewfromFile()
 Dim o%, i As Integer, rd As Integer, l$, strMessage As String
 
 Call form1.dbg2f("cmdViewfromFile()")
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
   If (listMessages.ListItems(i).Selected = True) Then
     o% = FreeFile
     Call form1.dbg2f("opening: " + listMessages.ListItems(i).SubItems(LVCFILE))
@@ -1496,7 +1496,7 @@ End Sub
 Sub getMsgfromFile()
 Dim i As Integer, rrr, o%, p%, hd%, f%, idx%, l$, X, cnt%, curr%, n%, dhwr As String
 Dim r As ADODB.Recordset, rc As Integer, eid$, u$, frm$, up$, c_c$, xx$, cc$
-Dim dh As ADODB.Recordset, sli$, r1c$, j%, w$, P1%, nn$, vn$, rtmp As ADODB.Recordset
+Dim dh As ADODB.Recordset, sli$, r1c$, j%, w$, p1%, nn$, vn$, rtmp As ADODB.Recordset
 Dim intResultCode As Integer, z$, lw$, vncv$, pf%
 Dim intNum As Integer, frome$, hid$, msgto$, trgnum$
 Dim strMessage As String, fn$, msgid$, dn$, sw$, bnd$, ucf$, bag$
@@ -1508,23 +1508,23 @@ Dim d2infile As String, d2insub As String
 d2infile = "Frmmain": d2insub = "getMsgfromFile"
 mlcl$ = form1.getusersetting("mailserver")
 mymailadr = form1.getusersetting("email", "")
-If listMessages.ListItems.Count = 0 Then Exit Sub
+If listMessages.ListItems.count = 0 Then Exit Sub
 u$ = form1.getuserid()
 dn = form1.mylocaldatadir() + "\mail\inbox"
 dn = form1.getusersetting("mailinboxdir", dn)
 
 cnt% = 0
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
   If (listMessages.ListItems(i).Selected = True) Then cnt% = cnt% + 1
 Next i%
 curr% = 0
 pgb1.Visible = True
-pgb1.Max = listMessages.ListItems.Count
+pgb1.Max = listMessages.ListItems.count
 If rrr <> 0 Then Exit Sub
 pgb2.Visible = True
 pgb2.Max = 100
 pgb2.value = 0
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
   pgb1.value = i: DoEvents
   Set lvitem = listMessages.ListItems(i)
   If (listMessages.ListItems(i).Selected = True) Then
@@ -1691,10 +1691,10 @@ rrr = form1.adoopen(dh, c$, form1.adoc, adOpenDynamic, adLockReadOnly, d2infile,
             l$ = r1c$
             While Len(l$) > 0
               w$ = mkalphanum(LCase(word1(l$)))
-              P1% = Len(w$)
-              If P1% > 0 Then
-                l$ = trm(Mid(l$, P1% + 1))
-                If P1% > 2 And P1% < 30 Then
+              p1% = Len(w$)
+              If p1% > 0 Then
+                l$ = trm(Mid(l$, p1% + 1))
+                If p1% > 2 And p1% < 30 Then
                   sli$ = trm(sli$ & " " & w$)
                 End If
               Else
@@ -1785,10 +1785,10 @@ On Error GoTo 0
 If rrr = 0 And marksize > 0 Then
 
 Call listMessages.SetFocus
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
   If listMessages.ListItems(i).Selected = True Then Exit Sub
 Next i
-For i = 1 To listMessages.ListItems.Count
+For i = 1 To listMessages.ListItems.count
   If listMessages.ListItems(i).SubItems(LVCSIZE) > marksize Then
     listMessages.ListItems(i).Selected = True
   Else
